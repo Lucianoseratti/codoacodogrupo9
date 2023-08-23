@@ -9,12 +9,15 @@
 </head>
 <body>
     <header>
-        <p>
-            <a href="../Home.html"><img src="../assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop" ></a>
-        </p>
-        <nav>
+    <nav>
+        <picture>
+          <a href="../Home.html">
+            <img src="../assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop" >
+          </a>
+        </picture>
         <ul>
-            <li><a href="../pages/Shop.html">Shop</a></li>
+            <li><a href="../pages/Shop.html">Shop</a>
+            <iconify-icon icon="tabler:chevron-down" style="color: white;"></iconify-icon></li>
             <li><a href="../pages/Contacto.html">Contacto</a></li>
             <li><a href="../pages/admin/Login.html">Login</a></li>
             <li> <a href="../pages/Carrito.html"> <iconify-icon icon="mdi:cart" style="color: white;" width="33" height="31"></iconify-icon></a></li>
@@ -25,7 +28,7 @@
     <section class="item">
         <picture class="item__img">
             <img src="../assets/star-wars/baby-yoda-1.webp" alt="bebe-yoda" class="car-item__front">
-            <img src="../assets/star-wars/baby-yoda-box.webp" alt="bebe-yoda-caja" class="car-item__back">
+           
         </picture>
         <article class="item__info">
             <p class="item__licence">Star Wars</p>
@@ -55,7 +58,7 @@
                 <picture class="card-item__cover">
                     <p class="nuevo">NUEVO</p>
                     <img src="../assets/star-wars/trooper-1.webp" alt="IMAGEN1" class="miniatura">
-                    <img src="../assets/star-wars/trooper-box.webp" alt="IMAGEN1-BOX" class="miniatura">
+                    
                 </picture>
                 <div class="card-item__content">
                     <p class="card-item__licence">STAR WARS</p>
@@ -72,7 +75,7 @@
                     <picture class="card-item__cover">
                         <p class="nuevo">NUEVO</p>
                         <img src="../assets/pokemon/pidgeotto-1.webp" alt="IMAGEN2" class="miniatura">
-                        <img src="../assets/pokemon/pidgeotto-box.webp" alt="IMAGEN2-BOX" class="miniatura">
+                        
                     </picture>
                     <div class="card-item__content">
                         <p class="card-item__licence">POKEMON</p>
@@ -89,7 +92,7 @@
                         <picture class="card-item__cover">
                             <p class="nuevo">NUEVO</p>
                             <img src="../assets/harry-potter/luna-1.webp" alt="" class="miniatura">
-                            <img src="../assets/harry-potter/luna-box.webp" alt="" class="miniatura">
+                           
                         </picture>
                         <div class="card-item__content">
                             <p class="card-item__licence">HARRY POTTER</p>
@@ -116,17 +119,23 @@
   </main>
 
 
-    <footer>
-        <p><a href="../Home.html"><img src="../assets/branding/isotype.svg" alt="ISO_funko_shop"></a></p>
-    <nav>
-        <ul>
-            <li><a href="../pages/Shop.html">Shop</a></li>
-            <li><a href="./admin/Login.html">Login</a></li>
-            <li><a href="../pages/Contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-        <small>All rights reserved 2023 - Funkoshop & copy;</small>
-    </footer>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <footer>
+   
+  <nav>
+    <ul>
+        <li><a href="../pages/Shop.html">Shop</a></li>
+        <li><a href="./pages/admin/Login.html">Login</a></li>
+        <li><a href="../pages/Contacto.html">Contacto</a></li>
+    </ul>
+    <picture>
+        <a href="./Home.html" rel="noopener noreferrer"></a>
+      <img src="../assets/branding/isotype.svg" alt="ISO_funko_shop">
+</a>
+    </picture>
+  </nav>
+    <small>All rights reserved 2023 - Funkoshop ©</small>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </body>
 </html>
