@@ -1,43 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>create</title>
-    <link rel="stylesheet" href="../../style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <p>
-            <a href="../../Home.html"><img src="../../assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop" ></a>
-        </p>
-        <nav>
+      <p>
+        <a href="../../Home.html"
+          ><img
+            src="../../assets/branding/logo_light_horizontal.svg"
+            alt="logo_funko_shop"
+        /></a>
+      </p>
+      <nav>
         <ul>
-            <li><a href="../../pages/Shop.html">Ver Tienda</a></li>
-            <li><a href="../../pages/admin/admin.html">Admin</a></li>
-            <li><a href="../../Home.html">Salir</a></li>
-        
-        
+          <li><a href="../../pages/Shop.html">Ver Tienda</a></li>
+          <li><a href="../../pages/admin/admin.html">Admin</a></li>
+          <li><a href="../../Home.html">Salir</a></li>
         </ul>
-    </nav>
+      </nav>
     </header>
-    <p>
-
-    </p>
+    <div>
+      <h1>CREAR NUEVO ITEM</h1>
+      <br />
+      <form action="#">
+        <div>
+          <label for="cat">Categoria:</label>
+          <select name="Seleccionar" id="cat">
+            <option value=""disabled selected hidden>Seleccionar</option>
+          </select>
+          <label for="lic">Licencia:</label>
+          <select name="Seleccionar" id="lic">
+            <option value=""disabled selected hidden>Seleccionar</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="">Nombre del producto: </label>
+          <input type="text" placeholder="Kakashi Hatake Shippuden Saga" />
+        </div>
+        <br />
+        <div>
+          <input type="text" placeholder="Descripcion del producto" />
+        </div>
+        <br />
+        <div>
+          <label for="sku">SKU: </label>
+          <input type="text" id="sku" placeholder="SSK111AB001" />
+          <label for="precio">Precio: </label>
+          <input type="text" id="precio" placeholder="$ 0.000,00" />
+          <label for="stock">Stock: </label>
+          <input type="text" id="stock" placeholder="0" />
+        </div>
+        <br />
+        <div>
+          <label for="desc">Descuento: </label>
+          <input type="text" id="desc" placeholder="0%" />
+          <label for="cuotas">Cuotas: </label>
+          <select name="cuota" id="cuotas" required>
+            <option disabled selected hidden>3 Cuotas sin intereses</option>
+            <option>3 Cuotas sin intereses</option>
+            <option>6 Cuotas sin intereses</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="img">Imagenes: </label>
+          <input type="file" />
+        </div>
+        <br />
+        <div>
+          <button>Agregar Producto</button>
+          <button>Limpiar</button>
+        </div>
+      </form>
+    </div>
     <footer>
-        <p><a href="../../Home.html"><img src="../../assets/branding/isotype.svg" alt="ISO_funko_shop"></a></p>
-    <nav>
+      <p>
+        <a href="../../Home.html"
+          ><img src="../../assets/branding/isotype.svg" alt="ISO_funko_shop"
+        /></a>
+      </p>
+      <nav>
         <ul>
-            <li><a href="../../pages/Shop.html">Shop</a></li>
-            <li><a href="../admin/Login.html">Login</a></li>
-            <li><a href="../../pages/Contacto.html">Contacto</a></li>
+          <li><a href="../../pages/Shop.html">Shop</a></li>
+          <li><a href="../admin/Login.html">Login</a></li>
+          <li><a href="../../pages/Contacto.html">Contacto</a></li>
         </ul>
-    </nav>
-        <small>All rights reserved 2023 - Funkoshop & copy;</small>
+      </nav>
+      <small>All rights reserved 2023 - Funkoshop & copy;</small>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-</body>
+  </body>
 </html>
