@@ -7,7 +7,15 @@ body{
 }
 header{
     background-color: #30343f;
+    
 }
+header nav ul li{
+    margin: 49px;
+    display: inline-block;
+    font-size: 20px;
+
+}
+
 footer{
     background-color: #30343f;
 }
