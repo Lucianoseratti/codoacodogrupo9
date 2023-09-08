@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2? familia= Inter:wght@400;500;700 &family= Raleway:ital,wght@0,700;1,500 & display=swap');
+
+
+/*header*/
+*{
+    margin: 0;
+
+}
+li{
+    display: flex;
+}
+.page-header{
+    background-color: #30343F;
+    padding:3.6rem;
+}
+.navbar-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.navbar-link{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 0.8rem;
+    color: #ffffff;
+    text-decoration: none ;
+}
+.navbar-link{
+display: flex;
+
+align-items: center;
+gap:0.5rem;
+font-family: 'Raleway', sans-serif;
+font-weight: 500;
+font-size: 20px;
+    padding: 0.8rem;
+    color: aliceblue;
+    text-decoration: none ;
+    text-transform: uppercase;
+}
+
+/*fin de header*/
+.container{
+    margin:5%;
+}
+
+
+.item{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;    
+    gap: 5rem;
+   
+
+}
+.car-item__front {
+    width: 550px;
+}
+.item__info{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    gap: 0.8rem;
+
+}
+
+.item__licence{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 19.36px;
+}
+.item__name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.375rem;
+    line-height: 46px;
+   text-transform: uppercase;
+
+}
+.item__description{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 29px;
+ }
+ .item__price{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2.375rem;
+    line-height: 46px;
+ }
+.item__cart{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 3%;
+}
+
+
+.item__input{
+    
+    margin: 3%;
+    width: 34%;
+    height: 3.125rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid #c9c9c9;
+
+}
+
+.item__button{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.item__quantity{
+    background: #4F4F4F;
+    color: #ffffff;
+
+}
+.item__submit{
+    display: flex;
+    width: auto;
+    height: 3.125rem;
+    background: #ff3333;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.125rem 1rem ;
+   align-items: center;
+    border: none;
+}
+
+.item__promo, .item__promo-a{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.825rem;
+    font-weight: 700;
+    line-height: 17px;
+   
+    text-align: left;
+    color:  #1D84B5;
+    
+    
+
+}
+.glide{
+    margin:5% 0%;
+}
+
+.slider__title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+
+}
+.glide__slider{
+    position: relative;
+}
+.slider__items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0%;
+    gap:5rem;
+   
+}
+.slider__item {
+display: flex;
+
+}
+.card-item__link{
+    text-decoration: none;
+    
+}
+.card-item__cover{
+    position: relative;
+}
+.new{
+    display: flex;
+    right: 0;
+    position: absolute;
+    background: red;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0.125rem 1rem;
+
+}
+
+.image__mini{
+width: 358px;
+
+}
+
+
+.card-item__content{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+.card-item__licence{
+    font-family: 'Inter', sans-serif;
+    color:#333333;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 17px; 
+}
+
+.card-item__name{
+    font-family: 'Inter', sans-serif;
+    color: #111111;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 22px;
+    
+    
+
+}
+
+.card-item__price{
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+font-size: 1rem;
+font-weight: 400;
+line-height: 19px;
+
+
+}
+
+.card-item__promo{
+font-family: 'Inter', sans-serif;
+color:  #1D84B5;
+font-size: 0.7rem;
+font-weight: 700;
+line-height: 15px;
+}
+
+.glide__arrow--left{
+    position: absolute;
+    padding: 1rem;
+    top: 50%;
+    background: #ffffff;
+    color:  #595959;
+    border-color: #0000002B;
+}
+.glide__arrow--right{
+    position: absolute;
+    padding: 1rem;
+    top: 50%;
+    right: 0%;
+    background: #ffffff;
+    color:  #595959;
+    border-color: #0000002B;
+}
+
+
+.footer{
+    background: #30343f;
+    padding: 6.8rem;
+    position: relative;
+
+}
+.nav__image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.nav-item__footer{
+    display: flex;
+
+}
+
+.navbar-link_footer{
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 23px;
+    text-decoration: none;
+   
+
+}
+.copyright{
+display: flex;
+    position: absolute;
+    margin-bottom: 1rem;
+     bottom: 0;
+    right: 35vw;
+    font-family: 'Raleway', sans-serif;
+    color:#ffffff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 23px;
+    
+    
+}

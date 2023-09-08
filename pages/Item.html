@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-</head>
+   
+    <link rel="stylesheet" href="../style/item.css">
+   </head>
 
 <body>
-    <header>
-        <p>
+    <header class="page-header">
+        <nav class="navbar-container">
+        <picture class="navbar-logo">
             <a href="../Home.html"><img src="../assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop"></a>
-        </p>
-        <nav>
-            <ul>
-                <li><a href="./Shop.html">Shop<iconify-icon icon="tabler:chevron-down"
+        </picture>
+       
+            <ul class="navbar-menu">
+                <li><a href="./Shop.html" class="navbar-link">Shop<iconify-icon icon="tabler:chevron-down"
                             style="color: white;"></iconify-icon></a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-                <li><a href="./admin/Login.html">Login</a></li>
+                <li><a href="./Contacto.html" class="navbar-link">Contacto</a></li>
+                <li><a href="./admin/Login.html" class="navbar-link">Login</a></li>
                 <li> <a href="./Carrito.html"> <iconify-icon icon="mdi:cart" style="color: white;" width="33"
                             height="31"></iconify-icon></a></li>
             </ul>
@@ -38,15 +37,18 @@
                 <h3 class="item__name">Baby Yoda Blueball</h3>
                 <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición
                     limitada.</p>
-                <p class="item__price">1799.99</p>
+                <p class="item__price">$ 1799.99</p>
                 <form action="" class="item__cart">
-                    <button id="subtract" class="item__quantity">-</button>
+                    
                     <input type="text" id="quantity" class="item__input" name="quantity" placeholder="0">
+                   <div class="item__button">
                     <button id="add" class="item__quantity">+</button>
+                    <button id="subtract" class="item__quantity">-</button>
+                    </div>
                     <button class="item__submit">Agregar al carrito</button>
                 </form>
                 <p class="item__promo">
-                    <a href="">Ver métodos de pago</a>
+                    <a href="" class="item__promo-a">Ver métodos de pago</a>
                     - 3 CUOTAS SIN INTERÉS
                 </p>
             </article>
@@ -60,8 +62,8 @@
                             <article class="card-item">
                                 <a href="" class="card-item__link">
                                     <picture class="card-item__cover">
-                                        <p class="nuevo">NUEVO</p>
-                                        <img src="../assets/star-wars/trooper-1.webp" alt="IMAGEN1" class="miniatura">
+                                        <p class="new">NUEVO</p>
+                                        <img src="../assets/star-wars/trooper-1.webp" alt="IMAGEN1" class="image__mini">
 
                                     </picture>
                                     <div class="card-item__content">
@@ -77,8 +79,8 @@
                             <article class="card-item">
                                 <a href="" class="card-item__link">
                                     <picture class="card-item__cover">
-                                        <p class="nuevo">NUEVO</p>
-                                        <img src="../assets/pokemon/pidgeotto-1.webp" alt="IMAGEN2" class="miniatura">
+                                        <p class="new">NUEVO</p>
+                                        <img src="../assets/pokemon/pidgeotto-1.webp" alt="IMAGEN2" class="image__mini">
 
                                     </picture>
                                     <div class="card-item__content">
@@ -94,8 +96,8 @@
                             <article class="card-item">
                                 <a href="" class="card-item__link">
                                     <picture class="card-item__cover">
-                                        <p class="nuevo">NUEVO</p>
-                                        <img src="../assets/harry-potter/luna-1.webp" alt="" class="miniatura">
+                                        <p class="new">NUEVO</p>
+                                        <img src="../assets/harry-potter/luna-1.webp" alt="" class="image__mini">
 
                                     </picture>
                                     <div class="card-item__content">
@@ -123,17 +125,21 @@
     </main>
 
 
-    <footer>
-        <picture><a href="../Home.html"><img src="../assets/branding/isotype.svg" alt="ISO_funko_shop"></a></picture>
-        <nav>
-            <ul>
-                <li><a href="./Shop.html">Shop</a></li>
-                <li><a href="./admin/Register.html">Registrarse</a></li>
-                <li><a href="./admin/Login.html">Login</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
+    <footer class="footer">
+        <div class="nav__image">
+        <nav class="nav__footer">
+            <ul class="nav-list">
+                <li class="nav-item__footer"><a href="./Shop.html" class="navbar-link_footer">Shop</a></li>
+                <li class="nav-item__footer"><a href="./admin/Register.html" class="navbar-link_footer">Registrarse</a></li>
+                <li class="nav-item__footer"><a href="./admin/Login.html" class="navbar-link_footer">Login</a></li>
+                <li class="nav-item__footer"><a href="./Contacto.html" class="navbar-link_footer">Contacto</a></li>
             </ul>
         </nav>
-        <small>All rights reserved 2023 - Funkoshop & copy;</small>
+        <picture>
+        <a href="../Home.html"><img src="../assets/branding/isotype.svg" alt="ISO_funko_shop"></a>
+    </picture>
+   </div>
+        <small class="copyright">All rights reserved 2023 - Funkoshop & copy;</small>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
