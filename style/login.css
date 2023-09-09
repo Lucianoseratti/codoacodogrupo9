@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #30343f;
+
+}
+
+header nav ul li {
+    margin: 17px;
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+footer {
+    background-color: #30343f;
+}
+
+#login {
+    margin: 128px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 36px;
+    font-family: "Inter", sans-serif;
+
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    display: block;
+    font-size: 18px;
+
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.login__title {
+    text-align: center;
+    gap: 36px;
+    font-size: 38px;
+
+}
+
+.login__form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 36px;
+
+}
+
+
+.form__box--grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 16px;
+    align-items: center;
+}
+
+#login .form__link {
+    font-size: 16px;
+    text-align: center;
+    color: #1D84B5;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+
+
+
+.form__label {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form__input {
+    padding: 10px 5px;
+    border: none;
+    flex-grow: 1;
+    border-bottom: 2px solid #ff3333;
+    font-size: 18px;
+    outline: none;
+}
+
+.form__input[name="email"]::placeholder {
+    color: #bbbbbb;
+
+}
+
+.form__submission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.form__btn {
+
+    color: white;
+    background-color: #FF3333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    padding-block: 12px;
+    padding-inline: 28px;
+
+    padding: 12px 28px;
+    font-size: 14px;
+
+}
+
+.form__remember {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 8px;
+}

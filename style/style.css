@@ -1,25 +1,29 @@
-*{
+* {
     margin: 0;
 
 }
-body{
+
+body {
     font-family: 'Raleway', sans-serif;
 }
-header{
+
+header {
     background-color: #30343f;
-    
+
 }
-header nav ul li{
+
+header nav ul li {
     margin: 49px;
     display: inline-block;
     font-size: 20px;
 
 }
 
-footer{
+footer {
     background-color: #30343f;
 }
-table{
+
+table {
     font-family: 'Inter', sans-serif;
     font-family: 'Raleway', sans-serif;
 }
