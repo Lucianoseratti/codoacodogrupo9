@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-}
+@import url('/style/footer.css');
+@import url('/style/header.css');
+@import url('/style/style.css');
 
 
 

@@ -3,8 +3,7 @@
 
 @import url('/style/footer.css');
 @import url('/style/header.css');
-@import url('/style/login.css');
-@import url('/style/item.css');
+
 
 * {
     margin: 0;
