@@ -4,6 +4,7 @@
     margin: 0;
 
 }
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -14,18 +15,17 @@ li {
 
 .page-header {
     background-color: #30343F;
-    padding: 35.5px;
+    padding: 36px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    height: 55.77px;
+margin: 0 auto;
     max-width: 1200px;
-    padding: 0;
 }
+
 
 
 
@@ -36,11 +36,11 @@ ol {
 
 .navbar__menu {
     display: flex;
-    height: 44.55px;
+
     align-items: center;
     gap: 20px;
     padding: 0;
-    margin: 0;
+
 }
 
 .navbar-link {
@@ -57,16 +57,22 @@ ol {
 
 .nabvar__logo img {
     max-width: 300px;
-    height: 55.77px;
+
 }
 
-ul {
-    margin: 0 auto;
+.nabvar__logo a {
+    display: inline;
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: 10px;
 }
+
+
 
 li {
     display: list-item;
-    text-align: -webkit-match-parent;
+
 }
 
 .navbar-item img {
@@ -76,7 +82,7 @@ li {
 .with-icon {
     display: flex;
     align-items: center;
-    gap: var(--spacing-8);
+    gap: 8px;
 }
 
 element.style {
