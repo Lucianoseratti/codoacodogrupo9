@@ -13,26 +13,28 @@
 
 <body>
 
-    <header>
-        <p>
-            <a href="../../Home.html"><img src="../../assets/branding/logo_light_horizontal.svg"
-                    alt="logo_funko_shop"></a>
-        </p>
-        <nav>
-            <ul>
-                <li><a href="../Shop.html">Ver Tienda</a></li>
-                <li><a href="./admin.html">Admin</a></li>
-                <li><a href="../../Home.html">Salir</a></li>
+    <header class="page-header">
+
+        <nav class="navbar container">
+            <picture class="nabvar__logo">
+                <a href="/Home.html"><img src="/assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop"></a>
+            </picture>
+            <ul class="navbar__menu">
+
+                <li><a class="navbar-link" href="/pages/Shop.html">VER TIENDA</a>
+                </li>
+                <li><a class="navbar-link" href="/pages/admin/admin.html" rel="noopener noreferrer">ADMIN</a></li>
+                <li><a class="navbar-link" href="/Home.html" rel=" noopener noreferrer">SALIR</a></li>
 
             </ul>
         </nav>
     </header>
- 
+
     <main>
         <h1>CREA TU CUENTA</h1>
 
         <p>Completa el formulario para ser parte del mundo de los Funkos</p>
-    
+
         <form action="">
             <ul>
                 <li>
@@ -40,28 +42,28 @@
                     <input type="text" placeholder="Juanito">
                 </li>
                 <li>
-                <label for="user">Apellido:</label>
-                <input type="text" placeholder="Alvarez">
-                 </li>
-            <li>
-                <label for="email">Email:</label>
-                <input type="email" placeholder="juanitoalvarez@correo.com">
-            </li>
-            <li>
-                <label for="password">Contraseña:</label>
-                <input type="password" placeholder="●●●●●●●●●●●●●●●">
-            </li>
-            <li>
-                <label for="password">Repita Contraseña:</label>
-                <input type="password" placeholder="●●●●●●●●●●●●●●●">
-            </li>
-            <li>
-                <button>
-                    <p>Registrar</p>
-                </button>
-                <input type="checkbox" required>
-                <label for="terminosycondiciones">Acepto Términos y Condiciones</label>
-            </li>
+                    <label for="user">Apellido:</label>
+                    <input type="text" placeholder="Alvarez">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="juanitoalvarez@correo.com">
+                </li>
+                <li>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" placeholder="●●●●●●●●●●●●●●●">
+                </li>
+                <li>
+                    <label for="password">Repita Contraseña:</label>
+                    <input type="password" placeholder="●●●●●●●●●●●●●●●">
+                </li>
+                <li>
+                    <button>
+                        <p>Registrar</p>
+                    </button>
+                    <input type="checkbox" required>
+                    <label for="terminosycondiciones">Acepto Términos y Condiciones</label>
+                </li>
             </ul>
         </form>
     </main>
