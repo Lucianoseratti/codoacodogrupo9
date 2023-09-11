@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2? familia= Inter:wght@400;500;700 &family= Raleway:ital,wght@0,700;1,500 & display=swap');
 
 
-
+.container{
+    margin:5%;
+}
 
 
 .item{
