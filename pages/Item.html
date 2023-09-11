@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item</title>
-   
-    <link rel="stylesheet" href="../style/item.css">
-   </head>
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
 
 <body>
     <header class="page-header">
-        <nav class="navbar-container">
-        <picture class="navbar-logo">
-            <a href="../Home.html"><img src="../assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop"></a>
-        </picture>
-       
-            <ul class="navbar-menu">
-                <li><a href="./Shop.html" class="navbar-link">Shop<iconify-icon icon="tabler:chevron-down"
-                            style="color: white;"></iconify-icon></a></li>
-                <li><a href="./Contacto.html" class="navbar-link">Contacto</a></li>
-                <li><a href="./admin/Login.html" class="navbar-link">Login</a></li>
-                <li> <a href="./Carrito.html"> <iconify-icon icon="mdi:cart" style="color: white;" width="33"
-                            height="31"></iconify-icon></a></li>
+
+        <nav class="navbar container">
+            <picture class="nabvar__logo">
+                <a href="/Home.html"><img src="/assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop"></a>
+            </picture>
+            <ul class="navbar__menu">
+
+                <li><a class="navbar-link" href="./pages/Shop.html">SHOP<iconify-icon icon="tabler:chevron-down"
+                            style="color: white;"></iconify-icon></a>
+                </li>
+                <li><a class="navbar-link" href="./pages/Contacto.html" rel="noopener noreferrer">CONTACTO</a></li>
+                <li><a class="navbar-link" href="./pages/admin/Login.html" rel=" noopener noreferrer">LOGIN</a></li>
+                <li>
+                    <a class="navbar-item" href="./pages/Carrito.html" rel="noopener noreferrer"><img
+                            src="/assets/icons/cart-icon.svg" alt="Carro de compras" /></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -39,11 +43,11 @@
                     limitada.</p>
                 <p class="item__price">$ 1799.99</p>
                 <form action="" class="item__cart">
-                    
+
                     <input type="text" id="quantity" class="item__input" name="quantity" placeholder="0">
-                   <div class="item__button">
-                    <button id="add" class="item__quantity">+</button>
-                    <button id="subtract" class="item__quantity">-</button>
+                    <div class="item__button">
+                        <button id="add" class="item__quantity">+</button>
+                        <button id="subtract" class="item__quantity">-</button>
                     </div>
                     <button class="item__submit">Agregar al carrito</button>
                 </form>
@@ -127,21 +131,22 @@
 
     <footer class="footer">
         <div class="nav__image">
-        <nav class="nav__footer">
-            <ul class="nav-list">
-                <li class="nav-item__footer"><a href="./Shop.html" class="navbar-link_footer">Shop</a></li>
-                <li class="nav-item__footer"><a href="./admin/Register.html" class="navbar-link_footer">Registrarse</a></li>
-                <li class="nav-item__footer"><a href="./admin/Login.html" class="navbar-link_footer">Login</a></li>
-                <li class="nav-item__footer"><a href="./Contacto.html" class="navbar-link_footer">Contacto</a></li>
-            </ul>
-        </nav>
-        <picture>
-        <a href="../Home.html"><img src="../assets/branding/isotype.svg" alt="ISO_funko_shop"></a>
-    </picture>
-   </div>
+            <nav class="nav__footer">
+                <ul class="nav-list">
+                    <li class="nav-item__footer"><a href="./Shop.html" class="navbar-link_footer">Shop</a></li>
+                    <li class="nav-item__footer"><a href="./admin/Register.html"
+                            class="navbar-link_footer">Registrarse</a></li>
+                    <li class="nav-item__footer"><a href="./admin/Login.html" class="navbar-link_footer">Login</a></li>
+                    <li class="nav-item__footer"><a href="./Contacto.html" class="navbar-link_footer">Contacto</a></li>
+                </ul>
+            </nav>
+            <picture>
+                <a href="../Home.html"><img src="../assets/branding/isotype.svg" alt="ISO_funko_shop"></a>
+            </picture>
+        </div>
         <small class="copyright">All rights reserved 2023 - Funkoshop & copy;</small>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </body>
