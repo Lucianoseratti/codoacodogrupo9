@@ -1,17 +1,14 @@
-@import url('/style/footer.css');
-@import url('/style/header.css');
 @import url('/style/style.css');
 
 
 
 #login {
-    margin: 128px auto;
+    margin: var(--spacing-128);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    gap: 36px;
-    font-family: "Inter", sans-serif;
+    gap: var(--spacing-36);
 
 }
 
@@ -19,7 +16,7 @@
 
 h2 {
     display: block;
-    font-size: 18px;
+    font-size: var(--font-medium);
 
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -28,8 +25,8 @@ h2 {
 
 .login__title {
     text-align: center;
-    gap: 36px;
-    font-size: 38px;
+    gap: var(--spacing-36);
+    font-size: var(--font-jumbo);
 
 }
 
@@ -39,7 +36,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    gap: 36px;
+    gap: var(--spacing-36);
 
 }
 
@@ -47,33 +44,35 @@ h2 {
 .form__box--grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 16px;
+    gap: var(--spacing-16);
     align-items: center;
 }
 
-#login .form__link {
-    font-size: 16px;
+.form__link {
+    font-size: var(--font-small);
     text-align: center;
-    color: #1D84B5;
+    color: var(--secondary-solid);
     text-decoration: none;
     font-family: inherit;
 }
 
-
+.form__link:hover {
+    color: var(--secodary-300);
+}
 
 
 .form__label {
-    font-size: 18px;
+    font-size: var(--font-medium);
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 .form__input {
-    padding: 10px 5px;
+    padding: 1rem 0.5rem;
     border: none;
     flex-grow: 1;
     border-bottom: 2px solid #ff3333;
-    font-size: 18px;
+    font-size: var(--font-medium);
     outline: none;
 }
 
@@ -86,27 +85,27 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: var(--spacing-16);
 }
 
 .form__btn {
 
-    color: white;
-    background-color: #FF3333;
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
     border: none;
     cursor: pointer;
     transition: background 0.2s ease-in-out;
-    padding-block: 12px;
-    padding-inline: 28px;
+    padding-block: var(--spacing-12);
+    padding-inline: var(--spacing-28);
 
-    padding: 12px 28px;
-    font-size: 14px;
+    padding: var(--spacing-12) var(--spacing-28);
+    font-size: var(--font-xsmall);
 
 }
 
 .form__remember {
     display: flex;
     align-items: center;
-    font-size: 18px;
-    gap: 8px;
+    font-size: var(--font-medium);
+    gap: var(--spacing-8);
 }

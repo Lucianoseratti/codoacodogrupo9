@@ -13,20 +13,32 @@
 
 <body>
   <header class="page-header">
-
+  
     <nav class="navbar container">
       <picture class="nabvar__logo">
-        <a href="/Home.html"><img src="/assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop"></a>
+        <a class="navbar__cart" href="/Home.html"><img src="/assets/branding/logo_light_horizontal.svg"
+            alt="logo_funko_shop"></a>
       </picture>
       <ul class="navbar__menu">
-
-        <li><a class="navbar-link" href="/pages/Shop.html">SHOP<iconify-icon icon="tabler:chevron-down"
-              style="color: white;"></iconify-icon></a>
+        <li class="navbar__item with-submenu">
+          <a class="navbar__link with-icon" href="/pages/Shop.html">SHOP
+            <iconify-icon icon="tabler:chevron-down" style="color: white;"></iconify-icon></a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Funkos</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Remeras</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">LLaveros</a>
+            </li>
+          </ul>
         </li>
-        <li><a class="navbar-link" href="/pages/Contacto.html" rel="noopener noreferrer">CONTACTO</a></li>
-        <li><a class="navbar-link" href="/pages/admin/Login.html" rel=" noopener noreferrer">LOGIN</a></li>
+        <li><a class="navbar__link" href="/pages/Contacto.html" rel="noopener noreferrer">CONTACTO</a></li>
+        <li><a class="navbar__link" href="/pages/admin/Login.html" rel=" noopener noreferrer">LOGIN</a></li>
         <li>
-          <a class="navbar-item" href="/pages/Carrito.html" rel="noopener noreferrer"><img
+          <a class="navbar__cart" href="/pages/Carrito.html" rel="noopener noreferrer"><img
               src="/assets/icons/cart-icon.svg" alt="Carro de compras" /></a>
         </li>
       </ul>
@@ -71,14 +83,14 @@
     </section>
   </main>
   <footer class="footer">
-
-    <nav class="navbar">
-
+  
+    <nav class="navbar conteiner">
+  
       <ul class="navbar_item">
-        <li class="navbar_item"><a class="navbar_link" href="../Shop.html">SHOP</a></li>
-        <li class="navbar_item"><a class="navbar_link" href="./Register.html">REGISTRARSE</a></li>
-        <li class="navbar_item"><a class="navbar_link" href="./Login.html">LOGIN</a></li>
-        <li class="navbar_item"><a class="navbar_link" href="../Contacto.html">CONTACTO</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="./Shop.html">SHOP</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="./admin/Register.html">REGISTRARSE</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="./admin/Login.html">LOGIN</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="./Contacto.html">CONTACTO</a></li>
       </ul>
       <picture>
         <img src="/assets/branding/isotype.svg" alt="ISO_funko_shop"></>

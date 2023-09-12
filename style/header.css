@@ -1,86 +1,75 @@
-
-
 @import url('/style/style.css');
 
 
 
 .page-header {
-    background-color: #30343F;
-    padding: 36px;
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-margin: 0 auto;
-    max-width: 1200px;
-}
 
-
-
-ul,
-ol {
-    list-style-type: none;
 }
 
 .navbar__menu {
     display: flex;
 
     align-items: center;
-    gap: 20px;
+    gap: var(--spacing-20);
     padding: 0;
 
 }
 
-.navbar-link {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    padding: 8px 16px;
-    color: #ffffff;
-    text-decoration: none;
+.navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
 }
 
-.nabvar__logo img {
+.navbar__link:hover {
+    background-color: var(--primary-900);
+}
+
+.nabvar__logo {
     max-width: 300px;
 
 }
 
-.nabvar__logo a {
-    display: inline;
-    text-decoration: none;
-    font-family: inherit;
-    color: inherit;
-    font-size: 10px;
-}
-
-
-
-li {
-    display: list-item;
-
-}
-
-.navbar-item img {
-    margin: 0 auto;
-}
 
 .with-icon {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--spacing-8);
 }
 
-element.style {
-    color: white;
+.with-icon iconify-icon svg {
+    color: var(--light-bg-solid);
 }
 
-iconify-icon {
-    color: #30343F;
-    font-size: 16px;
-    font-weight: 700;
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    z-index: 3;
+}
+
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: var(--primary-900);
 }
