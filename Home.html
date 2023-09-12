@@ -5,22 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Funkoshop</title>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <nav>
-      <a href="./Home.html" rel="noopener noreferrer"><img
-          src="../Copia de multimedia_ funkoshop/multimedia/branding/logo_light_horizontal.svg" alt="" /></a>
-      <ul>
-        <li><a href="./pages/Shop.html" rel="noopener noreferrer">SHOP</a></li>
-        <li><a href="./pages/Contacto.html" rel="noopener noreferrer">CONTACTO</a></li>
-        <li><a href="./pages/admin/Login.html" rel=" noopener noreferrer">LOGIN</a></li>
+  <header class="page-header">
+
+    <nav class="navbar container">
+      <picture class="nabvar__logo">
+        <a href="/Home.html"><img src="/assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop"></a>
+      </picture>
+      <ul class="navbar__menu">
+
+        <li><a class="navbar-link" href="./pages/Shop.html">SHOP<iconify-icon icon="tabler:chevron-down"
+              style="color: white;"></iconify-icon></a>
+        </li>
+        <li><a class="navbar-link" href="./pages/Contacto.html" rel="noopener noreferrer">CONTACTO</a></li>
+        <li><a class="navbar-link" href="./pages/admin/Login.html" rel=" noopener noreferrer">LOGIN</a></li>
         <li>
-          <a href="Carro" rel="noopener noreferrer"><img
-              src="../Copia de multimedia_ funkoshop/multimedia/icons/cart-icon.svg" alt="Carro de compras" />Acá está
-            el carro</a>
+          <a class="navbar-item" href="./pages/Carrito.html" rel="noopener noreferrer"><img
+              src="./assets/icons/cart-icon.svg" alt="Carro de compras" /></a>
         </li>
       </ul>
     </nav>
@@ -35,7 +47,7 @@
         <img src="./assets/funkos-banner.webp" alt="funkos-banner" />
       </figure>
       <p>Descubri el próximo Funko Pop de tu colección</p>
-      <a href="Shop">Shop</a>
+      <a href="./pages/Shop.html">Shop</a>
     </article>
   </section>
 
@@ -47,7 +59,7 @@
         Disfruta de una saga que sigue agregando personajes a su colección.
       </p>
       <img src="./assets/star-wars/baby-yoda-1.webp" alt="STAR WARS" />
-      <a href="">VER COLECCIÓN</a>
+      <a href="./pages/Shop.html">VER COLECCIÓN</a>
     </section>
 
     <section>
@@ -57,14 +69,14 @@
         amigos.
       </p>
       <img src="./assets/pokemon/vulpix-1.webp" alt="POKEMON" />
-      <a href="">VER COLECCIÓN</a>
+      <a href="./pages/Shop.html">VER COLECCIÓN</a>
     </section>
 
     <section>
       <h3>HARRY POTTER</h3>
       <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
       <img src="./assets/harry-potter/snape-patronus-1.webp" alt="HARRY POTTER">
-      <a href="">VER COLECCIÓN</a>
+      <a href="./pages/Shop.html">VER COLECCIÓN</a>
     </section>
 
     <section>
@@ -130,7 +142,7 @@
         <img src="../Copia de multimedia_ funkoshop/multimedia/star-wars/trooper-1.webp" alt="STROMTROOPER LIGHTSABER">
         <h3>STAR WARS</h3>
         <p>STROMTROOPER LIGHTSABER</p>
-            <p>$1799,99</p>
+            <p>$1
             <p>3 CUOTAS SIN INTERÉS</p>
       </section>
 
@@ -154,18 +166,24 @@
     -->
   </main>
 
-  <footer>
-    <p><a href="Home.html"><img src="../Copia de multimedia_ funkoshop/multimedia/branding/isotype.svg"
-          alt="ISO_funko_shop"></a></p>
-    <nav>
-      <ul>
-        <li><a href="../pages/Shop.html">Shop</a></li>
-        <li><a href="./pages/admin/Login.html">Login</a></li>
-        <li><a href="../pages/Contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <small>All rights reserved 2023 - Funkoshop & copy;</small>
-  </footer>
+    <footer class="footer">
+    
+      <nav class="navbar">
+    
+        <ul class="navbar_item">
+          <li class="navbar_item"><a class="navbar_link" href="../Shop.html">SHOP</a></li>
+          <li class="navbar_item"><a class="navbar_link" href="./Register.html">REGISTRARSE</a></li>
+          <li class="navbar_item"><a class="navbar_link" href="./Login.html">LOGIN</a></li>
+          <li class="navbar_item"><a class="navbar_link" href="../Contacto.html">CONTACTO</a></li>
+        </ul>
+        <picture>
+          <img src="/assets/branding/isotype.svg" alt="ISO_funko_shop"></>
+        </picture>
+      </nav>
+      <p class="footer_copy">All rights reserved 2023 - Funkoshop ©</p>
+    </footer>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
 </body>
 

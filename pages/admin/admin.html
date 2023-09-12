@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,184 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <header>
-        <p>
-            <a href="../../Home.html"><img src="../../assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop" ></a>
-        </p>
-        <nav>
-        <ul>
-            <li><a href="../../pages/Shop.html">Ver Tienda</a></li>
-            <li><a href="../../pages/admin/admin.html">Admin</a></li>
-            <li><a href="../../Home.html">Salir</a></li>
-        
-        
-        </ul>
-    </nav>
-    </header>
-    <p>
 
-    </p>
-    <footer>
-        <p><a href="../../Home.html"><img src="../../assets/branding/isotype.svg" alt="ISO_funko_shop"></a></p>
-    <nav>
-        <ul>
-            <li><a href="../../pages/Shop.html">Shop</a></li>
-            <li><a href="../admin/Login.html">Login</a></li>
-            <li><a href="../../pages/Contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-        <small>All rights reserved 2023 - Funkoshop & copy;</small>
+<body>
+
+    <header class="page-header">
+
+        <nav class="navbar container">
+            <picture class="nabvar__logo">
+                <a href="/Home.html"><img src="/assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop"></a>
+            </picture>
+            <ul class="navbar__menu">
+
+                <li><a class="navbar-link" href="/pages/Shop.html">VER TIENDA</a>
+                </li>
+                <li><a class="navbar-link" href="/pages/admin/admin.html" rel="noopener noreferrer">ADMIN</a></li>
+                <li><a class="navbar-link" href="/Home.html" rel=" noopener noreferrer">SALIR</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <label for=""><iconify-icon icon="material-symbols:search" width="42" height="42"></iconify-icon></label>
+    <input type="text">
+    <section>
+        <h2>LISTADO DE PRODUCTOS</h2>
+        <h3>AGREGAR<a href="./create.html"><iconify-icon icon="ph:plus-fill" style="color: red;" width="52"
+                    height="52"></iconify-icon></a></h3>
+        <TABLE>
+            <tr>
+                <th>ID</th>
+                <th>Código</th>
+                <th>Nombre del Producto</th>
+                <th>Categoria</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>STW001001</td>
+                <td>Baby Yoda Blueball</td>
+                <td>STARS WARS</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>STW001002</td>
+                <td>Boba Fett Fighter</td>
+                <td>STARS WARS</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>STW001003</td>
+                <td>Luke Skylwalker & Grogu</td>
+                <td>STARS WARS</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>STW001004</td>
+                <td>Stormtrooper Lightsaber</td>
+                <td>STARS WARS</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>PKM001001</td>
+                <td>Charmander Smiley</td>
+                <td>POKEMON</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>PKM001002</td>
+                <td>Dragonite Hi!</td>
+                <td>POKEMON</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>PKM001003</td>
+                <td>Pidgeotto Flying</td>
+                <td>POKEMON</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>PKM001004</td>
+                <td>Pikachu Smiley</td>
+                <td>POKEMON</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>PKM001005</td>
+                <td>Vulpix Fancy </td>
+                <td>POKEMON</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>HPT001001</td>
+                <td>Harry Potter & Hegwid</td>
+                <td>HARRY POTTER</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>HPT001002</td>
+                <td>Herminione Ball Dress</td>
+                <td>HARRY POTTER</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>HPT001003</td>
+                <td>Luna Lovegood Lion Mask</td>
+                <td>HARRY POTTER</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>HPT001004</td>
+                <td>Snape Patronus</td>
+                <td>HARRY POTTER</td>
+                <td><a href="./Edit.html"><iconify-icon icon="mdi:pencil" style="color: blue;" width="32"
+                            height="33"></iconify-icon></a></td>
+                <td><iconify-icon icon="ph:trash-fill" style="color: red;" width="34" height="34"></iconify-icon></td>
+            </tr>
+
+
+        </TABLE>
+    </section>
+    <footer class="footer">
+
+        <nav class="navbar">
+
+            <ul class="navbar_item">
+                <li class="navbar_item"><a class="navbar_link" href="../Shop.html">SHOP</a></li>
+                <li class="navbar_item"><a class="navbar_link" href="./Register.html">REGISTRARSE</a></li>
+                <li class="navbar_item"><a class="navbar_link" href="./Login.html">LOGIN</a></li>
+                <li class="navbar_item"><a class="navbar_link" href="../Contacto.html">CONTACTO</a></li>
+            </ul>
+            <picture>
+                <img src="/assets/branding/isotype.svg" alt="ISO_funko_shop"></>
+            </picture>
+        </nav>
+        <p class="footer_copy">All rights reserved 2023 - Funkoshop ©</p>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
+
 </html>

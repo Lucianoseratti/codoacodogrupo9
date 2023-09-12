@@ -1,0 +1,49 @@
+
+@import url('/style/style.css');
+
+.footer {
+    background-color: #30343f;
+    padding: 68px;
+    color: #ffffff;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.navbar_link {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 8px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.footer_copy {
+    margin-top: 36px;
+    text-align: center;
+    font-size: 10px;
+}

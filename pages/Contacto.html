@@ -1,42 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <p>
-            <a href="../Home.html"><img src="../assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop" ></a>
-        </p>
-        <nav>
-        <ul>
-            <li><a href="../pages/Shop.html">Shop</a></li>
-            <li><a href="../pages/Contacto.html">Contacto</a></li>
-            <li><a href="../pages/admin/Login.html">Login</a></li>
-            <li> <a href="../pages/Carrito.html"> <iconify-icon icon="mdi:cart" style="color: white;" width="33" height="31"></iconify-icon></a></li>
-        </ul>
-    </nav>
-    </header>
-    <p>
 
-    </p>
-    <footer>
-        <p><a href="../Home.html"><img src="../assets/branding/isotype.svg" alt="ISO_funko_shop"></a></p>
-    <nav>
-        <ul>
-            <li><a href="../pages/Shop.html">Shop</a></li>
-            <li><a href="./admin/Login.html">Login</a></li>
-            <li><a href="../pages/Contacto.html">Contacto</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="/style/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="page-header">
+
+    <nav class="navbar container">
+      <picture class="nabvar__logo">
+        <a href="/Home.html"><img src="/assets/branding/logo_light_horizontal.svg" alt="logo_funko_shop"></a>
+      </picture>
+      <ul class="navbar__menu">
+
+        <li><a class="navbar-link" href="/pages/Shop.html">SHOP<iconify-icon icon="tabler:chevron-down"
+              style="color: white;"></iconify-icon></a>
+        </li>
+        <li><a class="navbar-link" href="/pages/Contacto.html" rel="noopener noreferrer">CONTACTO</a></li>
+        <li><a class="navbar-link" href="/pages/admin/Login.html" rel=" noopener noreferrer">LOGIN</a></li>
+        <li>
+          <a class="navbar-item" href="/pages/Carrito.html" rel="noopener noreferrer"><img
+              src="/assets/icons/cart-icon.svg" alt="Carro de compras" /></a>
+        </li>
+      </ul>
     </nav>
-        <small>All rights reserved 2023 - Funkoshop & copy;</small>
-    </footer>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </header>
+  <main>
+    <section>
+      <h2>CONTACTO</h2>
+      <form action="" method="post">
+        <ul>
+          <li>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese aquí su nombre" />
+          </li>
+          <li>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese aquí su apellido" />
+          </li>
+          <li>
+            <label for="e-mail">Correo electrónico:</label>
+            <input type="email" name="email" id="e-mail" placeholder="su.correo@email.com" />
+          </li>
+          <li>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Ingrese aquí su teléfono" />
+          </li>
+          <li>
+            <label for="localidad">Localidad:</label>
+            <textarea name="localidad" id="localidad" placeholder="Ingrese aquí su lugar de residencia" cols="30"
+              rows="3"></textarea>
+          </li>
+          <li>
+            <label for="motivo">Consulta:</label>
+            <textarea name="motivo" id="motivo" placeholder="Escriba aquí el motivo de su comunicación" cols="30"
+              rows="8"></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Enviar" />
+          </li>
+        </ul>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+
+    <nav class="navbar">
+
+      <ul class="navbar_item">
+        <li class="navbar_item"><a class="navbar_link" href="../Shop.html">SHOP</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="./Register.html">REGISTRARSE</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="./Login.html">LOGIN</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="../Contacto.html">CONTACTO</a></li>
+      </ul>
+      <picture>
+        <img src="/assets/branding/isotype.svg" alt="ISO_funko_shop"></>
+      </picture>
+    </nav>
+    <p class="footer_copy">All rights reserved 2023 - Funkoshop ©</p>
+  </footer>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
+
 </html>

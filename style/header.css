@@ -1,0 +1,86 @@
+
+
+@import url('/style/style.css');
+
+
+
+.page-header {
+    background-color: #30343F;
+    padding: 36px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.navbar__menu {
+    display: flex;
+
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+
+}
+
+.navbar-link {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 8px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.nabvar__logo img {
+    max-width: 300px;
+
+}
+
+.nabvar__logo a {
+    display: inline;
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: 10px;
+}
+
+
+
+li {
+    display: list-item;
+
+}
+
+.navbar-item img {
+    margin: 0 auto;
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+element.style {
+    color: white;
+}
+
+iconify-icon {
+    color: #30343F;
+    font-size: 16px;
+    font-weight: 700;
+}
