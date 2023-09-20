@@ -34,6 +34,7 @@
     --font-jumbo: 3.8em;
     --font-xlarge: 3em;
     --font-large: 2.4em;
+    --font-xmedium: 2em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
     --font-xsmall: 1.4em;
@@ -92,6 +93,7 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .slider {
@@ -130,7 +132,9 @@ iconify-icon {
     background-color: var(--secondary-solid);
 }
 
-
+h2 {
+    font-family: var(--alternative-font);
+}
 
 .btn--medium {
     padding: var(--spacing-8) var(--spacing-16);

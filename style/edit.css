@@ -1,0 +1,144 @@
+@import url('/style/style.css');
+
+
+
+.edit {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h2 {
+    display: block;
+
+    color: var(--dark-solid);
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.edit__title {
+    margin-top: var(--spacing-28);
+    margin-bottom: var(--spacing-28);
+    font-size: var(--font-jumbo);
+}
+
+.form__item {
+    padding-bottom: var(--spacing-28);
+}
+
+.form__area {
+    font-size: var(--font-xlarge);
+    color: var(--dark-solid);
+    letter-spacing: 1px;
+    border-radius: 0.4rem;
+
+    border: 0.1rem solid var(--dark-solid);
+}
+
+
+
+.form__label {
+    font-size: var(--font-large);
+    letter-spacing: 1px;
+    margin-right: var(--spacing-16);
+    margin-left: var(--spacing-24);
+}
+
+.form__input {
+    color: var(--dark-solid);
+    border: none;
+    flex-grow: 1;
+    border-bottom: 2px solid #ff3333;
+    font-size: var(--font-medium);
+    outline: none;
+
+}
+
+
+
+.form__select {
+    border-radius: 5px;
+    border: 0.2rem solid var(--dark-bg-solid);
+    font-size: var(--font-xmedium);
+    padding: var(--spacing-8);
+    margin-left: var(--spacing-24);
+    margin-right: var(--spacing-24);
+
+    color: var(--dark-solid);
+}
+
+.form__link {
+    font-size: var(--font-small);
+    text-align: center;
+    color: var(--secondary-solid);
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.form__link:hover {
+    color: var(--secodary-300);
+}
+
+.form__submission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-16);
+}
+
+.form__btn {
+
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    padding: var(--spacing-16);
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-size: var(--font-xsmall);
+
+}
+
+.form__remember {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-medium);
+    gap: var(--spacing-8);
+}
+
+
+.form__img {
+    list-style: none;
+    /* Elimina los puntos de lista */
+    padding: 0;
+    display: flex;
+    /* Hacer que los elementos <li> se muestren en línea */
+    justify-content: left;
+    /* Espaciado uniforme entre los elementos <li> */
+}
+
+.column {
+    text-align: center;
+    width: 12.5%;
+    margin-right: var(--spacing-28);
+    font-size: var(--font-xmedium);
+    color: black;
+    font-family: var(--alternative-font);
+    justify-content: left;
+    padding-bottom: var(--spacing-28);
+}
+
+.column img {
+
+    /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
+}
+
+#img_edit {
+
+    border-bottom: 2px solid #ff3333;
+}

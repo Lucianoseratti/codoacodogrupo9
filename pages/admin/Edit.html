@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/edit.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -45,70 +45,77 @@
         </nav>
     </header>
 
-    <main>
-        <h1>EDITAR ITEM</h1>
-        <form action="/">
+    <main class="edit container">
+        <h2 class="edit__title">EDITAR ITEM</h2>
+        <form class="edit__form con " action="/">
             <ul>
-                <li>
-                    <label>Categoría:</label>
-                    <select name="" id="">
-                        <option value="star-wars">Star Wars</option>
+                <li class="form__item ">
+                    <label class="form__label">Categoría:</label>
+                    <select class="form__select" name="" id="">
+                        <option value="star-wars">Figuras</option>
                         <option value="marvel">Marvel</option>
                         <option value="dc">DC</option>
                     </select>
 
-                    <label>Licencia:</label>
-                    <select name="" id="">
-                        <option value="star-wars">Star Wars</option>
+                    <label class="form__label">Licencia:</label>
+                    <select class="form__select" name="" id="">
+                        <option value="star-wars">Naruto Shippuden</option>
                         <option value="marvel">Marvel</option>
                         <option value="dc">DC</option>
                     </select>
 
                 </li>
-                <li>
-                    <label>Nombre del Producto</label>
-                    <input type="text">
+                <li class="form__item">
+                    <label class="form__label">Nombre del Producto:</label>
+                    <input class="form__input" type="text" value="Kakashi Hatake Shippuden Saga">
                 </li>
-                <li>
-
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <li >
+                 
+                    <textarea class="form__area" id="" cols="73"
+                        rows="7">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
                 </li>
-                <li>
-                    <label>SKU:</label>
-                    <input type="text">
-                    <label>Precio:</label>
-                    <input type="text">
-                    <label>Stock:</label>
-                    <input type="text">
+                <li class="form__item">
+                    <label class="form__label">SKU:</label>
+                    <input class="form__input" type="text">
+                    <label class="form__label">Precio:</label>
+                    <input class="form__input" type="text">
+                    <label class="form__label">Stock:</label>
+                    <input class="form__input" type="text">
                 </li>
-                <li>
-                    <label>Descuento:</label>
-                    <input type="text">
-                    <label>Cuotas:</label>
-                    <select name="" id="">
+                <li class="form__item">
+                    <label class="form__label">Descuento:</label>
+                    <input class="form__input" type="text">
+                    <label class="form__label">Cuotas:</label>
+                    <select class="form__select" name="" id="">
                         <option value="1">1 Cuota</option>
                         <option value="3">3 Cuotas sin Interés</option>
                         <option value="6">6 Cuotas sin Interés</option>
                         <option value="12">12 Cuotas sin Interés</option>
                     </select>
                 </li>
-                <li>
-                <li>
-                    <label for="">Imágenes: </label>
-                    <input type="file" multiple name="" id="">
-                </li>
-                <li>
-                    <picture>
 
-                        <img src="" alt="frente">
+                <li class="form__item">
+                    <label class="form__label" for="">Imágenes: </label>
+                    <input class="" type="file" multiple name="" id="">
+                </li>
+                <li class="form__img">
+
+                    <div class="column">
+                        <img id="img_edit" src="/assets/pokemon/charmander-1.webp" alt="frente">
                         <p for="">Frente</p>
+                    </div>
 
-                        <img src="" alt="dorso">
-                        <p for="">Dorso </p>
-                    </picture>
+
+                    <div class="column">
+                        <img id="img_edit" src="/assets/pokemon/charmander-box.webp" alt="dorso">
+                        <p for="">Dorso</p>
+                    </div>
+
                 </li>
-                <li>
-                    <button type="submit">
+
+
+                <li class="form__item">
+                    <button class="form__btn btn btn--primary btn--large" type="submit">
                         <p>Modificar Producto</p>
                     </button>
                 </li>
@@ -118,7 +125,7 @@
     </main>
     <footer class="footer">
 
-        <nav class="navbar conteiner">
+        <nav class="navbar container">
 
             <ul class="navbar_item">
                 <li class="navbar_item"><a class="navbar_link" href="../Shop.html">SHOP</a></li>
