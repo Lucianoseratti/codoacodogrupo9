@@ -33,6 +33,7 @@
     font-weight: 500;
     font-size: 1rem;
     line-height: 19.36px;
+    text-transform: uppercase;
 }
 .item__name {
     font-family: 'Inter', sans-serif;
