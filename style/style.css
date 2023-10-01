@@ -143,3 +143,7 @@ h2 {
 .btn--large {
     padding: var(--spacing-12) var(--spacing-28);
 }
+
+img {
+    max-width: 100%;
+}
