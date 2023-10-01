@@ -49,7 +49,7 @@ h2 {
     color: var(--dark-solid);
     border: none;
     flex-grow: 1;
-    border-bottom: 2px solid #ff3333;
+    border-bottom: 2px solid var(--primary-solid);
     font-size: var(--font-medium);
     outline: none;
 
@@ -140,5 +140,5 @@ h2 {
 
 #img_edit {
 
-    border-bottom: 2px solid #ff3333;
+    border-bottom: 2px solid var(--primary-solid);
 }
