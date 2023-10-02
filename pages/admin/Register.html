@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -46,36 +46,36 @@
         </nav>
     </header>
 
-    <main>
-        <h1>CREA TU CUENTA</h1>
+    <main class="register container">
+        <h2 class="register_title">CREA TU CUENTA</h2>
 
-        <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+        <p class="register_text">Completa el formulario para ser parte del mundo de los Funkos</p>
 
-        <form action="">
-            <ul>
-                <li>
-                    <label for="user">Nombre:</label>
-                    <input type="text" placeholder="Juanito">
+        <form class="register_form">
+            <ul class="register_items">
+                <li class="register_item">
+                    <label class="register_label" for="user">Nombre:</label>
+                    <input class="register_input" type="text" placeholder="Juanito">
+                </li>
+                <li class="register_item">
+                    <label class="register_label" for="user">Apellido:</label>
+                    <input class="register_input" type="text" placeholder="Alvarez">
+                </li>
+                <li class="register_item">
+                    <label class="register_label" for="email">Email:</label>
+                    <input class="register_input" type="email" placeholder="juanitoalvarez@correo.com">
+                </li>
+                <li class="register_item">
+                    <label class="register_label" for="password">Contraseña:</label>
+                    <input class="register_input" type="password" name="pass" placeholder="●●●●●●●●●●●●●●●">
+                </li>
+                <li class="register_item">
+                    <label class="register_label" for="password">Repita Contraseña:</label>
+                    <input class="register_input" type="password" name="pass" placeholder="●●●●●●●●●●●●●●●">
                 </li>
                 <li>
-                    <label for="user">Apellido:</label>
-                    <input type="text" placeholder="Alvarez">
-                </li>
-                <li>
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="juanitoalvarez@correo.com">
-                </li>
-                <li>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" placeholder="●●●●●●●●●●●●●●●">
-                </li>
-                <li>
-                    <label for="password">Repita Contraseña:</label>
-                    <input type="password" placeholder="●●●●●●●●●●●●●●●">
-                </li>
-                <li>
-                    <button>
-                        <p>Registrar</p>
+                    <button class=" btn btn--primary btn--large">
+                        Registrar
                     </button>
                     <input type="checkbox" required>
                     <label for="terminosycondiciones">Acepto Términos y Condiciones</label>

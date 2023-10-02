@@ -1,0 +1,79 @@
+@import url('/style/style.css');
+
+
+.register {
+    margin: var(--spacing-28) auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
+
+}
+
+.register_title {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+
+    font-size: var(--font-jumbo);
+
+}
+
+.register_text {
+    font-family: var(--alternative-font);
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.register_form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+
+}
+
+.register_items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+}
+
+.register_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+}
+
+.register_label {
+    font-size: var(--font-large);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.register_input {
+    padding-bottom: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #ff3333;
+    font-size: var(--font-small);
+    outline: none;
+}
+
+.register_input::placeholder {
+
+    color: #B9B9B9;
+
+}
+
+.register_input[name="pass"]::placeholder {
+
+    color: #E0E0E0;
+
+}
