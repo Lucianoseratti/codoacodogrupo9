@@ -2,7 +2,7 @@
 
 
 .register {
-    margin: var(--spacing-28) auto;
+    margin: var(--spacing-36) auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,24 +56,52 @@
     font-size: var(--font-large);
     font-weight: 400;
     letter-spacing: 1px;
+    color: #000000;
 }
 
 .register_input {
     padding-bottom: 0.5rem;
     border: none;
     border-bottom: 2px solid #ff3333;
-    font-size: var(--font-small);
+    font-size: var(--font-medium);
     outline: none;
+    margin-left: var(--spacing-16);
 }
 
 .register_input::placeholder {
 
     color: #B9B9B9;
-
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .register_input[name="pass"]::placeholder {
 
     color: #E0E0E0;
+    font-size: var(--font-medium);
+    letter-spacing: 1.5px;
+}
 
+.register_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link_acept {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-medium);
+    gap: var(--spacing-8);
+}
+
+.link_term {
+    text-decoration: none;
+    color: var(--secondary-solid);
+    font-family: inherit;
+}
+
+.link_term:hover {
+    color: var(--dark-solid);
 }

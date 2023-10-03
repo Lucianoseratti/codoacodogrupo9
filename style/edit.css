@@ -24,48 +24,108 @@ h2 {
 }
 
 .form__item {
-    padding-bottom: var(--spacing-28);
+    display: flex;
+    margin-bottom: var(--spacing-36);
+    align-items: center;
 }
 
+.item_select {
+    display: flex;
+    align-items: center;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    width: 70%;
+
+}
+
+
 .form__area {
-    font-size: var(--font-xlarge);
+    font-size: var(--font-large);
     color: var(--dark-solid);
     letter-spacing: 1px;
     border-radius: 0.4rem;
-
+    font-weight: 400;
     border: 0.1rem solid var(--dark-solid);
+    padding: var(--spacing-8);
+    margin-bottom: var(--spacing-16);
 }
 
 
 
 .form__label {
+    display: flex;
     font-size: var(--font-large);
     letter-spacing: 1px;
-    margin-right: var(--spacing-16);
-    margin-left: var(--spacing-24);
+
+    color: #000000;
+    font-weight: 400;
 }
 
 .form__input {
     color: var(--dark-solid);
     border: none;
-    flex-grow: 1;
+    padding-bottom: 4px;
     border-bottom: 2px solid var(--primary-solid);
     font-size: var(--font-medium);
     outline: none;
+    letter-spacing: 1px;
+    margin-left: var(--spacing-8);
+    margin-right: var(--spacing-36);
+}
+
+#product_input {
+    min-width: 300px;
+
+}
+
+#SKU_input,
+#precio_input {
+    max-width: 130px;
+
+}
+
+#stock_input,
+#desc_input {
+    max-width: 55px;
+    text-align: center;
+ 
 
 }
 
 
-
 .form__select {
-    border-radius: 5px;
-    border: 0.2rem solid var(--dark-bg-solid);
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
     font-size: var(--font-xmedium);
     padding: var(--spacing-8);
-    margin-left: var(--spacing-24);
-    margin-right: var(--spacing-24);
-
+    margin: 0px var(--spacing-24);
+    min-width: 243px;
+    font-weight: 500;
+    font-family: inherit;
     color: var(--dark-solid);
+
+    -webkit-appearance: none;
+    /* Oculta la flecha en Safari */
+    -moz-appearance: none;
+    /* Oculta la flecha en Firefox */
+    appearance: none;
+    /* Oculta la flecha en navegadores modernos */
+    background: url('https://api.iconify.design/material-symbols/arrow-drop-down-rounded.svg?width=48&height=48') no-repeat right center;
+
+
+}
+
+#select_cuota {
+    min-width: 346px;
+    margin: var(--spacing-16) var(--spacing-8);
 }
 
 .form__link {
@@ -138,7 +198,19 @@ h2 {
     /* Mantiene la proporción de aspecto de la imagen */
 }
 
+.column p {
+    font-weight: 500;
+}
+
 #img_edit {
 
-    border-bottom: 2px solid var(--primary-solid);
+    border-bottom: 1px solid var(--primary-solid);
 }
+
+.item_arch {
+
+    padding: 0 var(--spacing-8);
+   
+
+}
+
