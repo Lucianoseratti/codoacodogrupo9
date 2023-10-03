@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>create</title>
-  <link rel="stylesheet" href="../../style/style.css">
+  <link rel="stylesheet" href="../../style/create.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -45,78 +45,86 @@
     </nav>
   </header>
 
-  <div>
-    <h1>CREAR NUEVO ITEM</h1>
+  
+    <main class="create container">
+    <h3 class="create__title">CREAR NUEVO ITEM</h3>
     <br />
     <form action="#">
-      <div>
-        <label for="cat">Categoria:</label>
-        <select name="Seleccionar" id="cat">
+      <ul>
+      <li class="create__li">
+        <label for="cat" class="label__select">Categoria:</label>
+        <select name="Seleccionar" id="cat" class="field__select">
           <option value="" disabled selected hidden>Seleccionar</option>
         </select>
-        <label for="lic">Licencia:</label>
-        <select name="Seleccionar" id="lic">
+        <label for="lic" class="label__select">Licencia:</label>
+        <select name="Seleccionar" id="lic" class="field__select">
           <option value="" disabled selected hidden>Seleccionar</option>
         </select>
-      </div>
+      </li>
       <br />
-      <div>
-        <label for="">Nombre del producto: </label>
-        <input type="text" placeholder="Kakashi Hatake Shippuden Saga" />
-      </div>
-      <br />
-      <div>
-        <input type="text" placeholder="Descripcion del producto" />
-      </div>
-      <br />
-      <div>
-        <label for="sku">SKU: </label>
-        <input type="text" id="sku" placeholder="SSK111AB001" />
-        <label for="precio">Precio: </label>
-        <input type="text" id="precio" placeholder="$ 0.000,00" />
-        <label for="stock">Stock: </label>
-        <input type="text" id="stock" placeholder="0" />
-      </div>
-      <br />
-      <div>
-        <label for="desc">Descuento: </label>
-        <input type="text" id="desc" placeholder="0%" />
-        <label for="cuotas">Cuotas: </label>
+      <li class="create__li">
+        <label for="prod" class="label__select">Nombre del producto: </label>
+        
+          <input type="text" placeholder="Kakashi Hatake Shippuden Saga" class="name__product" />
+        
+        
+      </li>
+      
+      <li class="create__li">
+        <textarea class="description__product" id="" cols="73"
+        rows="7" >Descripción del producto </textarea>
+      </li>
+     
+      <li class="create__li">
+        <label for="sku" class="label__select">SKU: </label>
+        <input type="text" id="sku" placeholder="SSK111AB001" class="name__product-sku" />
+        <label for="precio" class="label__select">Precio: </label>
+        <input type="text" id="precio" placeholder="$ 0.000,00" class="name__product-sku" />
+        <label for="stock" class="label__select">Stock: </label>
+        <input type="text" id="stock" placeholder="   0   " class="name__product-sku" />
+      </li>
+      
+      <li class="create__li">
+        <label for="desc" class="label__select">Descuento: </label>
+        <input type="text" id="desc" placeholder="   0%   " class="name__product-sku" />
+        <label for="cuotas" class="label__select">Cuotas: </label>
         <select name="cuota" id="cuotas" required>
           <option disabled selected hidden>3 Cuotas sin intereses</option>
           <option>3 Cuotas sin intereses</option>
           <option>6 Cuotas sin intereses</option>
         </select>
-      </div>
-      <br />
-      <div>
-        <label for="img">Imagenes: </label>
+      </li>
+      
+      <li class="create__li">
+        <label for="img" class="label__select">Imagenes: </label>
         <input type="file" />
-      </div>
-      <br />
-      <div>
-        <button>Agregar Producto</button>
-        <button>Limpiar</button>
+      </li>
+      
+      
+     </ul>
+        <button class="create__btn">Agregar Producto</button>
+        <button class="create__btn">Limpiar</button>
       </div>
     </form>
-  </div>
+  </main>
   <footer class="footer">
 
     <nav class="navbar container">
 
-      <ul class="navbar_item">
-        <li class="navbar_item"><a class="navbar_link" href="../Shop.html">SHOP</a></li>
-        <li class="navbar_item"><a class="navbar_link" href="../admin/Register.html">REGISTRARSE</a></li>
-        <li class="navbar_item"><a class="navbar_link" href="../admin/Login.html">LOGIN</a></li>
-        <li class="navbar_item"><a class="navbar_link" href="../Contacto.html">CONTACTO</a></li>
-      </ul>
-      <picture>
-        <img src="/assets/branding/isotype.svg" alt="ISO_funko_shop"></>
-      </picture>
+        <ul class="navbar_item">
+            <li class="navbar_item"><a class="navbar_link" href="../Shop.html">SHOP</a></li>
+            <li class="navbar_item"><a class="navbar_link" href="./Register.html">REGISTRARSE</a></li>
+            <li class="navbar_item"><a class="navbar_link" href="./Login.html">LOGIN</a></li>
+            <li class="navbar_item"><a class="navbar_link" href="../Contacto.html">CONTACTO</a></li>
+        </ul>
+        <picture>
+            <img src="/assets/branding/isotype.svg" alt="ISO_funko_shop"/>
+        </picture>
     </nav>
     <p class="footer_copy">All rights reserved 2023 - Funkoshop ©</p>
-  </footer>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</footer>
+
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
