@@ -1,0 +1,101 @@
+@import url('/style/style.css');
+
+
+
+.create {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--spacing-36);
+
+
+}
+
+.create__title {
+    font-family: var(--alternative-font);
+   
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: start;
+
+    font-size: var(--font-xlarge);
+
+}
+.create__li {
+    padding-bottom: var(--spacing-28);
+}
+
+.label__select{
+    font-family: var(--base-font);
+    font-weight: 300;
+    font-size: var(--font-small);
+    color: #000;
+    
+
+}
+
+.field__select{
+    font-family: var(--base-font);
+    font-size: var(--font-xxsmall);
+    padding-left: var(--spacing-16);
+    padding-right: var(--spacing-16);
+    margin-left: var(--spacing-36);
+    margin-right: var(--spacing-36);
+
+}
+.name__product{
+    font-family: var(--base-font);
+    font-size: var(--font-xxsmall);
+    margin-left: var(--spacing-16);
+    color: var(--dark-solid);
+    border: none;
+    text-decoration-line: underline;
+    text-decoration-color: var(--primary-solid);
+    
+    outline: none;
+}
+
+.description__product{
+
+    font-family: var(--base-font);
+    font-size: var(--font-xxsmall);
+   font-weight: 400;
+    color: var(--dark-solid);
+   
+
+}
+
+.name__product-sku{
+    font-family: var(--base-font);
+    font-size: var(--font-xxsmall);
+    width: var(--spacing-82);
+    margin-left: var(--spacing-16);
+    color: var(--dark-solid);
+    border: none;
+    text-decoration-line: underline;
+    text-decoration-color: var(--primary-solid);
+    
+    outline: none;
+
+
+
+}
+.create__btn{
+width: var(--spacing-180);
+color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    padding: var(--spacing-16);
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-size: var(--font-xsmall);
+    margin-right: var(--spacing-36);
+}
+.create__btn:hover{
+    background-color: var(--secondary-solid);
+}
