@@ -16,8 +16,29 @@
    
 
 }
-.car-item__front {
+.item__img {
+    display: flex;
     width: 550px;
+    cursor: pointer;
+}
+
+
+.item__img img{
+    animation: fade .7s;
+
+}
+
+
+.item__img:hover .card-item__img--back{
+    display: block;
+
+
+}
+
+.item__img:hover .card-item__img--front {
+    display: none;
+
+
 }
 .item__info{
     display: flex;
@@ -149,8 +170,33 @@ display: flex;
     
 }
 .card-item__cover{
+    display: flex;
     position: relative;
+    width: 358px;
+    
 }
+.card-item__cover img{
+    animation: fade .7s;
+
+}
+.card-item__img--back {
+    display: none;
+
+}
+
+.card-item__cover:hover .card-item__img--back{
+    display: block;
+
+
+}
+
+.card-item__cover:hover .card-item__img--front {
+    display: none;
+
+
+}
+
+
 .new{
     display: flex;
     right: 0;
@@ -167,8 +213,8 @@ display: flex;
 
 }
 
-.image__mini{
-width: 358px;
+.card-item__img--front {
+
 
 }
 
@@ -280,4 +326,16 @@ display: flex;
     line-height: 23px;
     
     
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+
+
 }
