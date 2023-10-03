@@ -70,7 +70,7 @@ h2 {
 .form__input {
     padding: 1rem 0.5rem;
     border: none;
-    flex-grow: 1;
+ 
     border-bottom: 2px solid #ff3333;
     font-size: var(--font-medium);
     outline: none;

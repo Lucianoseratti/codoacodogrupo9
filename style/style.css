@@ -132,9 +132,6 @@ iconify-icon {
     background-color: var(--secondary-solid);
 }
 
-h2 {
-    font-family: var(--alternative-font);
-}
 
 .btn--medium {
     padding: var(--spacing-8) var(--spacing-16);

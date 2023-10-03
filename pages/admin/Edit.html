@@ -49,28 +49,30 @@
         <h2 class="edit__title">EDITAR ITEM</h2>
         <form class="edit__form con " action="/">
             <ul>
-                <li class="form__item ">
-                    <label class="form__label">Categoría:</label>
-                    <select class="form__select" name="" id="">
-                        <option value="star-wars">Figuras</option>
-                        <option value="marvel">Marvel</option>
-                        <option value="dc">DC</option>
-                    </select>
-
-                    <label class="form__label">Licencia:</label>
-                    <select class="form__select" name="" id="">
-                        <option value="star-wars">Naruto Shippuden</option>
-                        <option value="marvel">Marvel</option>
-                        <option value="dc">DC</option>
-                    </select>
-
+                <li class="form__item grid ">
+                    <div class="item_select">
+                        <label class="form__label">Categoría:</label>
+                        <select class="form__select" name="" id="">
+                            <option value="star-wars">Figuras</option>
+                            <option value="marvel">Marvel</option>
+                            <option value="dc">DC</option>
+                        </select>
+                    </div>
+                    <div class="item_select">
+                        <label class="form__label">Licencia:</label>
+                        <select class="form__select" name="" id="">
+                            <option value="star-wars">Naruto Shippuden</option>
+                            <option value="marvel">Marvel</option>
+                            <option value="dc">DC</option>
+                        </select>
+                    </div>
                 </li>
                 <li class="form__item">
                     <label class="form__label">Nombre del Producto:</label>
                     <input class="form__input" type="text" value="Kakashi Hatake Shippuden Saga">
                 </li>
-                <li >
-                 
+                <li>
+
                     <textarea class="form__area" id="" cols="73"
                         rows="7">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
                 </li>
@@ -96,7 +98,7 @@
 
                 <li class="form__item">
                     <label class="form__label" for="">Imágenes: </label>
-                    <input class="" type="file" multiple name="" id="">
+                    <input class="item_arch" type="file" multiple name="" id="">
                 </li>
                 <li class="form__img">
 
