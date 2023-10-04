@@ -72,6 +72,7 @@ h2 {
     border: none;
     padding-bottom: 4px;
     border-bottom: 2px solid var(--primary-solid);
+
     font-size: var(--font-medium);
     outline: none;
     letter-spacing: 1px;
@@ -94,7 +95,7 @@ h2 {
 #desc_input {
     max-width: 55px;
     text-align: center;
- 
+
 
 }
 
@@ -172,12 +173,12 @@ h2 {
 
 .form__img {
     list-style: none;
-    /* Elimina los puntos de lista */
+
     padding: 0;
     display: flex;
-    /* Hacer que los elementos <li> se muestren en línea */
+
     justify-content: left;
-    /* Espaciado uniforme entre los elementos <li> */
+
 }
 
 .column {
@@ -192,10 +193,8 @@ h2 {
 }
 
 .column img {
-
-    /* Hace que la imagen ocupe el 100% del ancho del contenedor */
     height: auto;
-    /* Mantiene la proporción de aspecto de la imagen */
+
 }
 
 .column p {
@@ -210,7 +209,6 @@ h2 {
 .item_arch {
 
     padding: 0 var(--spacing-8);
-   
+
 
 }
-
