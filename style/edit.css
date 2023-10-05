@@ -8,19 +8,17 @@
 
 }
 
-h2 {
+.edit__title {
     display: block;
-
+    font-family: var(--alternative-font);
     color: var(--dark-solid);
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-.edit__title {
+    font-weight: 700;
     margin-top: var(--spacing-28);
     margin-bottom: var(--spacing-28);
     font-size: var(--font-jumbo);
+    letter-spacing: 1px;
 }
 
 .form__item {
@@ -64,7 +62,7 @@ h2 {
     letter-spacing: 1px;
 
     color: #000000;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .form__input {
@@ -114,11 +112,11 @@ h2 {
     color: var(--dark-solid);
 
     -webkit-appearance: none;
-    /* Oculta la flecha en Safari */
+
     -moz-appearance: none;
-    /* Oculta la flecha en Firefox */
+
     appearance: none;
-    /* Oculta la flecha en navegadores modernos */
+
     background: url('https://api.iconify.design/material-symbols/arrow-drop-down-rounded.svg?width=48&height=48') no-repeat right center;
 
 
@@ -152,7 +150,7 @@ h2 {
 
     color: var(--light-font-solid);
     background-color: var(--primary-solid);
-
+    font-weight: 600;
     border: none;
     cursor: pointer;
     transition: background 0.2s ease-in-out;
@@ -207,8 +205,10 @@ h2 {
 }
 
 .item_arch {
-
-    padding: 0 var(--spacing-8);
-
+    display: flex;
+    font-size: var(--font-xsmall);
+    padding: 0px var(--spacing-8);
+    border-radius: 6px;
+    font-weight: 400;
 
 }
