@@ -14,20 +14,17 @@
 
 
 
-h2 {
-    display: block;
-    font-size: var(--font-medium);
-
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
 .login__title {
+    display: block;
     text-align: center;
     gap: var(--spacing-36);
     font-size: var(--font-jumbo);
 
+    
+
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 700;
 }
 
 .login__form {
@@ -65,6 +62,7 @@ h2 {
     font-size: var(--font-medium);
     font-weight: 600;
     letter-spacing: 1px;
+    color: #000000;
 }
 
 .form__input {
@@ -74,6 +72,7 @@ h2 {
     border-bottom: 2px solid #ff3333;
     font-size: var(--font-medium);
     outline: none;
+      
 }
 
 .form__input[name="email"]::placeholder {
