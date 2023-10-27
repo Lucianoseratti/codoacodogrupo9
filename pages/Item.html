@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    
     <link rel="stylesheet" href="../style/item.css">
    
     
@@ -57,15 +56,15 @@
                 <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición
                     limitada.</p>
                 <p class="item__price">$ 1799.99</p>
-                <form action="" class="item__cart">
+                <div action="" class="item__cart">
 
-                    <input type="text" id="quantity" class="item__input" name="quantity" placeholder="0">
+                    <input type="text" id="quantity" class="item__input" name="quantity" id="quantity" placeholder="0" >
                     <div class="item__button">
-                        <button id="add" class="item__quantity">+</button>
-                        <button id="subtract" class="item__quantity">-</button>
+                        <button id="add" class="item__quantity" >+</button>
+                        <button id="subtract" class="item__quantity" >-</button>
                     </div>
                     <button class="item__submit">Agregar al carrito</button>
-                </form>
+                </div>
                 <p class="item__promo">
                     <a href="" class="item__promo-a">Ver métodos de pago</a>
                     - 3 CUOTAS SIN INTERÉS
@@ -163,56 +162,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-   new Glide('.glide', {
-  type: 'carousel',
-  startAt: 0,
-  perView: 3,
-  gap:30,
- 
-  breakpoints: {
-  
-    1130: {
-      perView: 2
-    },
-    650:{
-        perView: 1
-    }
-  }
+    <script src="../js/glide.js">
+//ir a carpeta js, para el codigo de gslide
 
-}).mount();
-/* reemplazar lo de arriba por esto si quieren que corra solo
-var input = document.querySelector('.glide')
-
-var glide = new Glide('.glide', {
-    hoverpause: true,
-    type: 'carousel',
-  autoplay: 2000 ,
-  startAt: 0,
-  gap:30,
-  perView: 3,
-  breakpoints: {
-  
-  1130: {
-    perView: 2
-  },
-  650:{
-      perView: 1
-  }
-}
-})
-
-
-input.addEventListener('input', function (event) {
-  glide.update({
-    autoplay: (event.target.value != 0) ? event.target.value : false
-  })
-})
-
-
-
-glide.mount()*/
-      </script>
+    </script>
+   <script src="../js/quantity.js"></script>
+      
 </body>
 
 </html>
