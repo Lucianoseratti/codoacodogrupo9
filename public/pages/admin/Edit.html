@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="/css/edit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="page-header">
+
+        <nav class="navbar container">
+            <picture class="nabvar__logo">
+                <a class="navbar__cart" href="/Home.html"><img src="/img/branding/logo_light_horizontal.svg"
+                        alt="logo_funko_shop"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../Shop.html">SHOP
+                        <iconify-icon icon="tabler:chevron-down" style="color: white;"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">LLaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="navbar__link" href="../Contacto.html" rel="noopener noreferrer">CONTACTO</a></li>
+                <li><a class="navbar__link" href="../admin/Login.html" rel=" noopener noreferrer">LOGIN</a></li>
+                <li>
+                    <a class="navbar__cart" href="../Carrito.html" rel="noopener noreferrer"><img
+                            src="/img/icons/cart-icon.svg" alt="Carro de compras" /></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="edit container">
+        <h2 class="edit__title">EDITAR ITEM</h2>
+        <form class="edit__form con " action="/">
+            <ul>
+                <li class="form__item grid ">
+                    <div class="item_select">
+                        <label class="form__label">Categoría:</label>
+                        <select class="form__select" name="" id="">
+                            <option value="star-wars">Figuras</option>
+                            <option value="marvel">Marvel</option>
+                            <option value="dc">DC</option>
+                        </select>
+                    </div>
+                    <div class="item_select">
+                        <label class="form__label">Licencia:</label>
+                        <select class="form__select" name="" id="">
+                            <option value="star-wars">Naruto Shippuden</option>
+                            <option value="marvel">Marvel</option>
+                            <option value="dc">DC</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="form__item">
+                    <label class="form__label">Nombre del Producto:</label>
+                    <input class="form__input" id="product_input" type="text" value="Kakashi Hatake Shippuden Saga">
+                </li>
+                <li>
+
+                    <textarea class="form__area" id="" cols="90"
+                        rows="8">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+                </li>
+                <li class="form__item">
+                    <label class="form__label">SKU:</label>
+                    <input class="form__input" id="SKU_input" type="text" value="NAR001012">
+                    <label class="form__label">Precio:</label>
+                    <input class="form__input" id="precio_input" type="text" value="$ 1.799,00">
+                    <label class="form__label">Stock:</label>
+                    <input class="form__input" id="stock_input" type="text" value="10">
+                </li>
+                <li class="form__item">
+                    <label class="form__label">Descuento:</label>
+                    <input class="form__input" id="desc_input" type="text" value="10%">
+                    <label class="form__label">Cuotas:</label>
+                    <select class="form__select" name="" id="select_cuota">
+                        <option value="1">1 Cuota</option>
+                        <option value="3">3 Cuotas sin Interés</option>
+                        <option value="6">6 Cuotas sin Interés</option>
+                        <option value="12">12 Cuotas sin Interés</option>
+                    </select>
+                </li>
+
+                <li class="form__item">
+                    <label class="form__label" for="">Imágenes: </label>
+                    <input class="item_arch" type="file" multiple name="" id="">
+                </li>
+                <li class="form__img">
+
+                    <div class="column">
+                        <img id="img_edit" src="/img/pokemon/charmander-1.webp" alt="frente">
+                        <p for="">Frente</p>
+                    </div>
+
+
+                    <div class="column">
+                        <img id="img_edit" src="/img/pokemon/charmander-box.webp" alt="dorso">
+                        <p for="">Dorso</p>
+                    </div>
+
+                </li>
+
+
+                <li class="form__item">
+                    <button class="form__btn btn btn--primary btn--large" type="submit">
+                        Modificar Producto
+                    </button>
+                </li>
+            </ul>
+        </form>
+
+    </main>
+    <footer class="footer">
+
+        <nav class="navbar container">
+
+            <ul class="navbar_item">
+                <li class="navbar_item"><a class="navbar_link" href="../Shop.html">SHOP</a></li>
+                <li class="navbar_item"><a class="navbar_link" href="../admin/Register.html">REGISTRARSE</a></li>
+                <li class="navbar_item"><a class="navbar_link" href="../admin/Login.html">LOGIN</a></li>
+                <li class="navbar_item"><a class="navbar_link" href="../Contacto.html">CONTACTO</a></li>
+            </ul>
+            <picture>
+                <img src="/img/branding/isotype.svg" alt="ISO_funko_shop"></>
+            </picture>
+        </nav>
+        <p class="footer_copy">All rights reserved 2023 - Funkoshop ©</p>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>

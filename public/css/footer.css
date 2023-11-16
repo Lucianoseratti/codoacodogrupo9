@@ -1,0 +1,41 @@
+@import url('./style.css');
+
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar_link {
+    
+    list-style-type: none;
+    align-items: center;
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    color: var(--light-font-solid);
+    text-decoration: none;
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.navbar_link:hover {
+    background-color: var(--primary-900);
+}
+
+img {
+    width: 100%;
+}
+
+.footer_copy {
+    margin-top: var(--spacing-36);
+    text-align: center;
+
+}

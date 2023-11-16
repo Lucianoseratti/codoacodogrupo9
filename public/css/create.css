@@ -1,0 +1,166 @@
+@import url('./style.css');
+
+
+
+.create {
+
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+
+.create__title {
+    display: block;
+    font-family: var(--alternative-font);
+    color: var(--dark-solid);
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 700;
+    margin-top: var(--spacing-28);
+    margin-bottom: var(--spacing-28);
+    font-size: var(--font-jumbo);
+    letter-spacing: 1px;
+
+}
+
+.create__li {
+    display: flex;
+    margin-bottom: var(--spacing-36);
+    align-items: center;
+}
+
+
+
+.label__select {
+    display: flex;
+    font-size: var(--font-large);
+    letter-spacing: 1px;
+
+    color: #000000;
+    font-weight: 300;
+
+}
+
+.field__select {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+    font-size: var(--font-xmedium);
+    padding: var(--spacing-8);
+    margin: 0px var(--spacing-36);
+    min-width: 243px;
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--dark-solid);
+
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+
+    appearance: none;
+
+    background: url('https://api.iconify.design/material-symbols/arrow-drop-down-rounded.svg?width=48&height=48') no-repeat right center;
+
+}
+
+.name__product {
+    color: var(--dark-solid);
+    border: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--primary-solid);
+    min-width: 300px;
+    font-size: var(--font-medium);
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: var(--spacing-8);
+    margin-right: var(--spacing-36);
+
+
+}
+
+.description__product {
+
+    font-size: var(--font-large);
+    color: var(--dark-solid);
+    letter-spacing: 1px;
+    border-radius: 0.4rem;
+    font-weight: 400;
+    border: 0.1rem solid var(--dark-solid);
+    padding: var(--spacing-8);
+    margin-bottom: var(--spacing-16);
+
+
+}
+
+.name__product-sku {
+    color: var(--dark-solid);
+    border: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--primary-solid);
+
+    font-size: var(--font-medium);
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: var(--spacing-16);
+    margin-right: var(--spacing-36);
+
+
+
+}
+
+.name__product-sku::placeholder {
+    color: #B9B9B9;
+
+}
+
+#SKU_input,
+#precio_input {
+    max-width: 130px;
+
+}
+
+#stock_input,
+#desc_input {
+    max-width: 55px;
+    text-align: center;
+
+
+}
+
+#cuotas {
+    min-width: 346px;
+    margin: var(--spacing-16) var(--spacing-8);
+}
+
+.create__btn {
+
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-size: var(--font-xsmall);
+
+    width: var(--spacing-180);
+    height: var(--spacing-48);
+    margin-right: var(--spacing-36);
+    margin-bottom: var(--spacing-36);
+}
+.item_arch {
+    display: flex;
+    font-size: var(--font-xsmall);
+    padding: 0px var(--spacing-8);
+    border-radius: 6px;
+    font-weight: 400;
+
+}
+.create__btn:hover {
+    background-color: var(--secondary-solid);
+}
