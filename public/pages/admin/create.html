@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>create</title>
+  <link rel="stylesheet" href="../../css/create.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+
+    <nav class="navbar container">
+      <picture class="nabvar__logo">
+        <a class="navbar__cart" href="/Home.html"><img src="/img/branding/logo_light_horizontal.svg"
+            alt="logo_funko_shop"></a>
+      </picture>
+      <ul class="navbar__menu">
+        <li class="navbar__item with-submenu">
+          <a class="navbar__link with-icon" href="../Shop.html">SHOP
+            <iconify-icon icon="tabler:chevron-down" style="color: white;"></iconify-icon></a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Funkos</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Remeras</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">LLaveros</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="navbar__link" href="../Contacto.html" rel="noopener noreferrer">CONTACTO</a></li>
+        <li><a class="navbar__link" href="../admin/Login.html" rel=" noopener noreferrer">LOGIN</a></li>
+        <li>
+          <a class="navbar__cart" href="../Carrito.html" rel="noopener noreferrer"><img src="/img//icons/cart-icon.svg"
+              alt="Carro de compras" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="create container">
+    <h3 class="create__title">CREAR NUEVO ITEM</h3>
+    <br />
+    <form action="#">
+      <ul>
+        <li class="create__li">
+          <label for="cat" class="label__select">Categoria:</label>
+          <select name="Seleccionar" id="cat" class="field__select">
+            <option value="" disabled selected hidden>Seleccionar</option>
+          </select>
+          <label for="lic" class="label__select">Licencia:</label>
+          <select name="Seleccionar" id="lic" class="field__select">
+            <option value="" disabled selected hidden>Seleccionar</option>
+          </select>
+        </li>
+        <br />
+        <li class="create__li">
+          <label for="prod" class="label__select">Nombre del producto: </label>
+
+          <input type="text" placeholder="Kakashi Hatake Shippuden Saga" class="name__product" />
+
+
+        </li>
+
+        <li class="create__li">
+          <textarea class="description__product" id="" cols="72" rows="8">Descripción del producto </textarea>
+        </li>
+
+        <li class="create__li">
+          <label for="sku" class="label__select">SKU: </label>
+          <input type="text" id="SKU_input" placeholder="SSK111AB001" class="name__product-sku" />
+          <label for="precio" class="label__select">Precio: </label>
+          <input type="text" id="precio_input" placeholder="$ 0.000,00" class="name__product-sku" />
+          <label for="stock" class="label__select">Stock: </label>
+          <input type="text" id="stock_input" placeholder="   0   " class="name__product-sku" />
+        </li>
+
+        <li class="create__li">
+          <label for="desc" class="label__select">Descuento: </label>
+          <input type="text" id="desc_input" placeholder="   0%   " class="name__product-sku" />
+          <label for="cuotas" class="label__select">Cuotas: </label>
+          <select class="field__select" name="cuota" id="cuotas" required>
+            <option disabled selected hidden>3 Cuotas sin interes</option>
+            <option>3 Cuotas sin interes</option>
+            <option>6 Cuotas sin interes</option>
+          </select>
+        </li>
+
+        <li class="create__li">
+          <label for="img" class="label__select">Imagenes: </label>
+          <input class="item_arch" type="file" multiple />
+        </li>
+
+
+      </ul>
+      <button class="create__btn">Agregar Producto</button>
+      <button class="create__btn">Limpiar</button>
+      </div>
+    </form>
+  </main>
+  <footer class="footer">
+
+    <nav class="navbar container">
+
+      <ul class="navbar_item">
+        <li class="navbar_item"><a class="navbar_link" href="../Shop.html">SHOP</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="./Register.html">REGISTRARSE</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="./Login.html">LOGIN</a></li>
+        <li class="navbar_item"><a class="navbar_link" href="../Contacto.html">CONTACTO</a></li>
+      </ul>
+      <picture>
+        <img src="/img//branding/isotype.svg" alt="ISO_funko_shop" />
+      </picture>
+    </nav>
+    <p class="footer_copy">All rights reserved 2023 - Funkoshop ©</p>
+  </footer>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>

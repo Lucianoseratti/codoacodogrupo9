@@ -1,0 +1,214 @@
+@import url('./style.css');
+
+
+
+.edit {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.edit__title {
+    display: block;
+    font-family: var(--alternative-font);
+    color: var(--dark-solid);
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 700;
+    margin-top: var(--spacing-28);
+    margin-bottom: var(--spacing-28);
+    font-size: var(--font-jumbo);
+    letter-spacing: 1px;
+}
+
+.form__item {
+    display: flex;
+    margin-bottom: var(--spacing-36);
+    align-items: center;
+}
+
+.item_select {
+    display: flex;
+    align-items: center;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    width: 70%;
+
+}
+
+
+.form__area {
+    font-size: var(--font-large);
+    color: var(--dark-solid);
+    letter-spacing: 1px;
+    border-radius: 0.4rem;
+    font-weight: 400;
+    border: 0.1rem solid var(--dark-solid);
+    padding: var(--spacing-8);
+    margin-bottom: var(--spacing-16);
+}
+
+
+
+.form__label {
+    display: flex;
+    font-size: var(--font-large);
+    letter-spacing: 1px;
+
+    color: #000000;
+    font-weight: 300;
+}
+
+.form__input {
+    color: var(--dark-solid);
+    border: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--primary-solid);
+
+    font-size: var(--font-medium);
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: var(--spacing-8);
+    margin-right: var(--spacing-36);
+}
+
+#product_input {
+    min-width: 300px;
+
+}
+
+#SKU_input,
+#precio_input {
+    max-width: 130px;
+
+}
+
+#stock_input,
+#desc_input {
+    max-width: 55px;
+    text-align: center;
+
+
+}
+
+
+.form__select {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+    font-size: var(--font-xmedium);
+    padding: var(--spacing-8);
+    margin: 0px var(--spacing-24);
+    min-width: 243px;
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--dark-solid);
+
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+
+    appearance: none;
+
+    background: url('https://api.iconify.design/material-symbols/arrow-drop-down-rounded.svg?width=48&height=48') no-repeat right center;
+
+
+}
+
+#select_cuota {
+    min-width: 346px;
+    margin: var(--spacing-16) var(--spacing-8);
+}
+
+.form__link {
+    font-size: var(--font-small);
+    text-align: center;
+    color: var(--secondary-solid);
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.form__link:hover {
+    color: var(--secodary-300);
+}
+
+.form__submission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-16);
+}
+
+.form__btn {
+
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    padding: var(--spacing-16);
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-size: var(--font-xsmall);
+
+}
+
+.form__remember {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-medium);
+    gap: var(--spacing-8);
+}
+
+
+.form__img {
+    list-style: none;
+
+    padding: 0;
+    display: flex;
+
+    justify-content: left;
+
+}
+
+.column {
+    text-align: center;
+    width: 12.5%;
+    margin-right: var(--spacing-28);
+    font-size: var(--font-xmedium);
+    color: black;
+    font-family: var(--alternative-font);
+    justify-content: left;
+    padding-bottom: var(--spacing-28);
+}
+
+.column img {
+    height: auto;
+
+}
+
+.column p {
+    font-weight: 500;
+}
+
+#img_edit {
+
+    border-bottom: 1px solid var(--primary-solid);
+}
+
+.item_arch {
+    display: flex;
+    font-size: var(--font-xsmall);
+    padding: 0px var(--spacing-8);
+    border-radius: 6px;
+    font-weight: 400;
+
+}
