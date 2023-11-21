@@ -22,7 +22,8 @@
             <ul class="navbar__menu">
                 <li class="navbar__item with-submenu">
                     <a class="navbar__link with-icon" href="../pages/Shop.html">SHOP
-                        <iconify-icon icon="tabler:chevron-down" style="color: white;"></iconify-icon></a>
+                        <iconify-icon icon="octicon:chevron-down-16" width="28" height="28"
+                            style="color: white;"></iconify-icon></a>
                     <ul class="submenu">
                         <li class="submenu__item">
                             <a href="" class="submenu__link">Funkos</a>
@@ -44,26 +45,24 @@
             </ul>
         </nav>
     </header>
-    <main class="container-item">
+    <main class="container">
         <section class="item">
             <picture class="item__img">
                 <img src="../img/star-wars/baby-yoda-1.webp" alt="bebe-yoda" class="card-item__img--front">
                 <img src="../img/star-wars/baby-yoda-box.webp" alt="bebe-yoda-box" class="card-item__img--back">
             </picture>
             <article class="item__info">
-                <p class="item__licence">Star Wars</p>
-                <h3 class="item__name">Baby Yoda Blueball</h3>
+                <p class="item__licence">STAR WARS</p>
+                <h3 class="item__name">BABY YODA BLUEBALL</h3>
                 <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición
                     limitada.</p>
                 <p class="item__price">$ 1799.99</p>
-                <div action="" class="item__cart">
+                <div class="item__cart">
 
+                    <button id="subtract" class="item__quantity">-</button>
                     <input type="text" id="quantity" class="item__input" name="quantity" id="quantity" placeholder="0">
-                    <div class="item__button">
-                        <button id="add" class="item__quantity">+</button>
-                        <button id="subtract" class="item__quantity">-</button>
-                    </div>
-                    <button class="item__submit">Agregar al carrito</button>
+                    <button id="add" class="item__quantity">+</button>
+                    <button class="item__submit btn btn--primary btn--medium" type="submit">Agregar al carrito</button>
                 </div>
                 <p class="item__promo">
                     <a href="" class="item__promo-a">Ver métodos de pago</a>
@@ -76,7 +75,7 @@
             <div class="glide__track" data-glide-el="track">
 
                 <ul class="slider__items glide__slides">
-                    <li class="slider__item glide__slides">
+                    <li class="slider__item glide__slider">
                         <article class="card-item">
                             <a href="" class="card-item__link">
                                 <picture class="card-item__cover">

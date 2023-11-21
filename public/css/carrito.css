@@ -25,6 +25,9 @@
     border: 1px solid #FAFAFF;
     box-shadow: 0px 0px 10px 0px #00000040;
     border-radius: 10px;
+
+    background-color: #FAFAFF;
+    ;
 }
 
 .art_item {
@@ -95,6 +98,7 @@
     border: 1px solid #FAFAFF;
     box-shadow: 0px 0px 10px 0px #00000040;
     border-radius: 25px;
+    background-color: #FAFAFF;
 }
 
 .img_item img {
@@ -182,7 +186,7 @@
     float: right;
     align-items: flex-end;
     border: 1px solid #FAFAFF;
-  
+
 }
 
 .table__resum {
@@ -192,12 +196,13 @@
     width: 100%;
     margin-bottom: var(--spacing-48);
     gap: var(--spacing-20);
+    background-color: #FAFAFF;
 }
 
-.res_tit{
+.res_tit {
     padding-top: var(--spacing-36);
     margin-bottom: var(--spacing-20);
-  
+
 }
 
 
@@ -228,8 +233,8 @@ span {
 
 .btn__resum {
 
-            width: 100%;
-      
+    width: 100%;
+
     font-family: inherit;
     font-weight: bold;
     font-size: 32px;

@@ -79,6 +79,8 @@
 
 .with-icon iconify-icon svg {
     color: var(--light-bg-solid);
+    
+
 }
 
 .with-submenu:hover .submenu {
