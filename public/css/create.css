@@ -55,7 +55,7 @@
     min-width: 243px;
     font-weight: 500;
     font-family: inherit;
-    color: var(--dark-solid);
+    color: #B9B9B9;
 
     -webkit-appearance: none;
 
@@ -117,6 +117,8 @@
 
 }
 
+
+
 #SKU_input,
 #precio_input {
     max-width: 130px;
@@ -153,14 +155,16 @@
     margin-right: var(--spacing-36);
     margin-bottom: var(--spacing-36);
 }
+
 .item_arch {
     display: flex;
-    font-size: var(--font-xsmall);
+    font-size: var(--font-small);
     padding: 0px var(--spacing-8);
     border-radius: 6px;
     font-weight: 400;
 
 }
+
 .create__btn:hover {
     background-color: var(--secondary-solid);
 }

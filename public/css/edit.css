@@ -206,9 +206,10 @@
 
 .item_arch {
     display: flex;
-    font-size: var(--font-xsmall);
+    font-size: var(--font-small);
     padding: 0px var(--spacing-8);
     border-radius: 6px;
     font-weight: 400;
+ 
 
 }
