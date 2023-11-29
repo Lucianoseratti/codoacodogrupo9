@@ -1,6 +1,15 @@
+const fs = require ("fs")
+const path = require ("path")
+const productosJSON = JSON.parse (fs.readFileSync("./src/data/productos.json","utf-8"))
+
+
 module.exports = {
     homeView: (req, res) => {
-        res.send("devuelve vista home");
+     res.render("home",{
+        title: "pepe",
+        productos: productosJSON
+     })
+       
     },
     contactView: (req, res) => {
         res.send("devuelve vista contact");
