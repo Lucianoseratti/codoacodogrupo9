@@ -7,6 +7,7 @@
     "product_description": "Figura coleccionable pokemon",
     "product_price": 1799.99,
     "dues": 10,
+    "stock": 5,
     "product_sku": "PKM001001",
     "img_front": "/img/pokemon/pidgeotto-1.webp",
     "img_back": "/img/pokemon/pidgeotto-box.webp"
@@ -20,6 +21,7 @@
         "product_description": "Figura coleccionable de Luna Lovegood - Saga Harry Pooter",
         "product_price": 1599.99,
         "dues": 10,
+        "stock": 5,
         "product_sku": "HRP001001",
         "img_front": "/img/harry-potter/luna-1.webp",
         "img_back": "/img/harry-potter/luna-box.webp"
@@ -32,11 +34,26 @@
             "product_name": "STORMTROOPER LIGHTSABER",
             "product_description": "Figura coleccionable Stormtrooper Lightsaber",
             "product_price": 1899.99,
-            "dues": 10,
+            "dues": 10, 
+            "stock": 5,
             "product_sku": "STW001001",
             "img_front": "/img/star-wars/trooper-1.webp",
             "img_back": "/img/star-wars/trooper-box.webp"
-            }
+            },
+
+            {
+                "product_id": 4,
+                "licence_name": "STAR WARS",
+                "category_name": "Figuras coleccionables",
+                "product_name": "STORMTROOPER LIGHTSABER",
+                "product_description": "Figura coleccionable Stormtrooper Lightsaber",
+                "product_price": 1899.99,
+                "dues": 10,
+                "stock": 5,
+                "product_sku": "STW001001",
+                "img_front": "/img/star-wars/trooper-1.webp",
+                "img_back": "/img/star-wars/trooper-box.webp"
+                }   
 
 
     ]

@@ -1,6 +1,7 @@
+@import url('./style.css');
 @import url('https://fonts.googleapis.com/css2? familia= Inter:wght@400;500;700 &family= Raleway:ital,wght@0,700;1,500 & display=swap');
 
-@import url('./style.css');
+
 
 .container-item {
     max-width: 1200px;
@@ -112,9 +113,13 @@
 }
 
 .item__quantity {
-    background: #4F4F4F;
-    color: #ffffff;
-
+    width: 18px;
+    height: 16px;
+    /* padding: 0; */
+    cursor: pointer;
+    margin-top: 2px;
+    background-color: #f24e1e;
+    color: white;
 }
 
 .item__submit {

@@ -1,23 +1,21 @@
 
 
-const add = document.querySelector("#add")
-const subtract = document.querySelector("#subtract")
-const quantity = document.querySelector("#quantity")
+const addButton = document.querySelectorAll(".add");
+const subtractButton = document.querySelectorAll(".subtract");
+const quantityInputs = document.querySelectorAll(".quantity");
 
+addButton.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        quantityInputs[index].value = Number(quantityInputs[index].value) + 1;
+    });
+});
 
-
-
-
-add.addEventListener("click", () =>
-
- quantity.value = Number(quantity.value) + 1);
-
-subtract.addEventListener("click", () => {
-
-  if (quantity.value > 0) {
-
-    quantity.value = Number(quantity.value) - 1
-  }
+subtractButton.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        if (quantityInputs[index].value > 0) {
+            quantityInputs[index].value = Number(quantityInputs[index].value) - 1;
+        }
+    });
 });
 
 
