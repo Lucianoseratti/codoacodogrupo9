@@ -43,7 +43,9 @@
             </tr>
             <% productos.forEach(producto => { %>
             <tr>
-                <td class="item_id">1</td>
+                <td>
+                    <%=producto.product_id%>
+                </td>
                 <td><%=producto.product_sku%></td>
                 <td><%=producto.product_name%></td>
                 <td><%=producto.licence_name%></td>

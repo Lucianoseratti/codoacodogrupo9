@@ -36,7 +36,7 @@ module.exports = {
         console.log (producto);
         if (producto.length > 0) {
             // Renderizar la vista solo si se encuentra el producto
-            res.render("./shop/item", { id_producto, producto: producto[0], title: `${producto[0].product_name}`, productos: productosJSON });
+            res.render("./shop/item", { title_slider: "PRODUCTOS RELACIONADOS", id_producto, producto: producto[0], title: `${producto[0].product_name}`, productos: productosJSON });
         } else {
             // Manejar el caso en el que no se encuentra el producto
             res.status(404).send("Producto no encontrado");

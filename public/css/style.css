@@ -104,12 +104,7 @@ header {
 
 }
 
-.slider {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-36);
-    margin: var(--spacing-68) auto;
-}
+
 
 .slider__title {
     font-family: var(--alternative-font);

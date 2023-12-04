@@ -124,18 +124,16 @@ a {
 
 
 .new {
-    display: flex;
+
     right: 0;
     position: absolute;
-    background: red;
-    color: #ffffff;
+    background: var(--primary-solid);
+    color: var(--light-font-solid);
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: var(--font-xsmall);
     font-weight: 500;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding: 0.125rem 1rem;
+
+    padding: var(--spacing-8) var(--spacing-12);
 
 }
 

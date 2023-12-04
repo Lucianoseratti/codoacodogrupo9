@@ -1,33 +1,39 @@
+<section class="slider container glide">
+  <h2 class="slider__title"><%=title_slider%></h2>
+  <div class="glide__track" data-glide-el="track">
+    <ul class="slider__items glide__slides">
+      <% productos.forEach(producto=> { %>
+        <li class="slider__item glide__slider">
+          <article class="card-item">
+            <a href="/shop/item/<%= producto.product_id %>" class="card-item__link">
+              <picture class="card-item__cover">
+                <p class="new">NUEVO</p>
+                <img src="<%= producto.img_front %>" alt="IMAGEN1" class="card-item__img--front">
+                <img src="<%= producto.img_back %>" alt="imagen-troper-box" class="card-item__img--back">
+              </picture>
+              <div class="card-item__content">
+                <p class="card-item__licence">
+                  <%= producto.licence_name %>
+                </p>
+                <h4 class="card-item__name">
+                  <%= producto.product_name %>
+                </h4>
+                <p class="card-item__price">$ <%= producto.product_price %>.-</p>
+                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <% }); %>
 
-      <div class="glide__track" data-glide-el="track">
-        <ul class="slider__items glide__slider">
-            <% productos.forEach(producto => { %>
-          <li class="slider__item glide__slider">
-            <article class="card-item">
-              <a href="/shop/item/<%= producto.product_id %>" class="card-item__link">
-                <picture class="card-item__cover">
-                  <p class="new">NUEVO</p>
-                  <img src="<%= producto.img_front %>" alt="IMAGEN1" class="card-item__img--front">
-                  <img src="<%= producto.img_back %>" alt="imagen-troper-box" class="card-item__img--back">
-                </picture>
-                <div class="card-item__content">
-                  <p class="card-item__licence"><%= producto.licence_name %></p>
-                  <h4 class="card-item__name"><%= producto.product_name %></h4>
-                  <p class="card-item__price">$ <%= producto.product_price %>.-</p>
-                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                </div>
-              </a>
-            </article>
-          </li>
-          <% }); %>
-         
-      </div>
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-          <iconify-icon icon="tabler:chevron-left"></iconify-icon>
-        </button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-          <iconify-icon icon="tabler:chevron-right"></iconify-icon>
-        </button>
-      </div>
-   
+  </div>
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+      <iconify-icon icon="tabler:chevron-left"></iconify-icon>
+    </button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+      <iconify-icon icon="tabler:chevron-right"></iconify-icon>
+    </button>
+  </div>
+
+</section>

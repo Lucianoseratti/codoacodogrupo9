@@ -6,7 +6,8 @@ const productosJSON = JSON.parse (fs.readFileSync("./src/data/productos.json","u
 module.exports = {
     homeView: (req, res) => {
      res.render("home",{
-        title: "Home | Funkoshop",
+         title: "Home | Funkoshop",
+         title_slider: "ÚLTIMOS LANZAMIENTOS",
         productos: productosJSON
      })
        
