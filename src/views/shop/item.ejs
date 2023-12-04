@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+
+    <link rel="stylesheet" href="../../css/item.css">
+  
+
+</head>
+
+<body>
+    <%-include("../partials/header")%>
+        <main class="container">
+            <section class="item">
+                <picture class="item__img">
+                    <img src="<%=producto.img_front%>" alt="bebe-yoda" class="card-item__img--front">
+                    <img src="<%=producto.img_back%>" alt="bebe-yoda-box" class="card-item__img--back">
+                </picture>
+                <article class="item__info">
+                    <p class="item__licence">
+                        <%=producto.licence_name%>
+                    </p>
+                    <h3 class="item__name">
+                        <%=producto.product_name%>
+                    </h3>
+                    <p class="item__description">
+                        <%=producto.product_description%>
+                    </p>
+                    <p class="item__price">$ <%=producto.product_price%>
+                    </p>
+                    <div action="" class="item__cart">
+                        <button class="item__quantity subtract">-</button>
+                        <input type="text" class="item__input quantity" name="quantity" placeholder="0">
+
+                        <button class="item__quantity add">+</button>
+
+
+                        <button class="item__submit btn btn--primary btn--medium" type="submit">Agregar al
+                            carrito</button>
+                    </div>
+                    <p class="item__promo">
+                        <a href="" class="item__promo-a">Ver métodos de pago</a>
+                        - 3 CUOTAS SIN INTERÉS
+                    </p>
+                </article>
+            </section>
+          
+               
+                    <%-include("../partials/slider")%>
+               
+
+            
+
+        </main>
+
+
+        <%-include("../partials/footer")%>
+
+</body>
+
+</html>

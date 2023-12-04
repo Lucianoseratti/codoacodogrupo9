@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+  <%-include("../partials/header")%>
+    <main class="admin container">
+        <div class="admin_search">
+            <label for=""><iconify-icon icon="material-symbols:search" width="42" height="42"></iconify-icon></label>
+            <input class="search_input" type="search" placeholder="código, nombre o categoria">
+        </div>
+        <div class="admin_head_table ">
+            <h2 class="admin_title">LISTADO DE PRODUCTOS</h2>
+            <div class="admin_add">
+                <h3 class="title_add">AGREGAR</h3>
+                <a href="../admin/create"><iconify-icon icon="ph:plus-fill" style="color: red;" width="52"
+                        height="52"></iconify-icon></a>
+            </div>
+        </div>
+        <table class="admin_table">
+            <tr class="table_nav">
+                <th>ID</th>
+                <th>Código</th>
+                <th>Nombre del Producto</th>
+                <th>Categoria</th>
+                <th></th>
+                <th></th>
+
+            </tr>
+            <% productos.forEach(producto => { %>
+            <tr>
+                <td>
+                    <%=producto.product_id%>
+                </td>
+                <td><%=producto.product_sku%></td>
+                <td><%=producto.product_name%></td>
+                <td><%=producto.licence_name%></td>
+                <td><a class="lapiz" href="./admin/Edit/<%=producto.product_id %>"><iconify-icon icon="mdi:pencil"
+                            style="color: var(--secondary-solid);" width="32" height="33"></iconify-icon></a></td>
+                <td class="elim"><iconify-icon icon="ph:trash-fill" style="color: red;" width="34"
+                        height="34"></iconify-icon></td>
+            </tr>
+            <% }); %>
+            
+
+
+        </table>
+        </section>
+    </main>
+    <%-include("../partials/footer")%>
+</body>
+
+</html>
+        

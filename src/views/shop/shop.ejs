@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%=title%>
+  </title>
+  <link rel="stylesheet" href="../css/shop.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <%-include("../partials/header")%>
+
+    <main id="shop" class="container">
+      <!--FALTA COLOCAR LAS CLASES Y LOS ID -->
+      <aside class="shop__filters filters">
+      <div class="filters__search">
+        <label class="filters__title" for="search">BUSCAR</label>
+        <input class="input_search" type="text" name="search" id="search" placeholder="item o categoría">
+      </div>
+      <div class="filters__order">
+        <label class="filters__title" for="orderby">ORDERNAR POR</label>
+        <select name="orderby" id="orderby">
+          <option value="az">A-Z</option>
+          <option value="za">Z-A</option>
+          <option value="desc">Mayor precio</option>
+          <option value="asc">Menor precio</option>
+        </select>
+      </div>
+      <div class="filters__price">
+        <span class="filters__title">PRECIO</span>
+        <div>
+          <label for="min">MIN</label>
+          <input class="input_cant" type="text" name="min" id="min" placeholder="0">
+          <label for="max">- MAX</label>
+          <input class="input_cant" type="text" name="max" id="max" placeholder="0">
+        </div>
+      </div>
+      <div class="filters__checks">
+        <span class="filters__title" for="filter">FILTRAR</span>
+        <div>
+          <input type="checkbox" name="filter" id="news" value="news">
+          <label for="">NUEVOS</label>
+        </div>
+        <div>
+          <input type="checkbox" name="filter" id="offers" value="offers">
+          <label for="">OFERTAS</label>
+        </div>
+        <div>
+          <input type="checkbox" name="filter" id="specials" value="specials">
+          <label for="">EDICIÓN ESPECIAL</label>
+        </div>
+        <div>
+          <input type="checkbox" name="filter" id="favs" value="favs">
+          <label for="">FAVORITOS</label>
+        </div>
+      </div>
+      </aside>
+
+      <!--ESTA BIEN HACE UNA LISTA GRANDE O SERIA MEJOR SEPARARLOS POR CADA 3 PRODUCTOS???-->
+
+      <section class="articulos">
+        <ul class="slider__items">
+          <% productos.forEach(producto=> { %>
+            <li class="slider__item">
+              <article class="card-item">
+                <a href="shop/item/<%= producto.product_id %>" class="card-item__link">
+                  <picture class="card-item__cover">
+                    <p class="new">NUEVO</p>
+                    <img src=".<%= producto.img_front %>" alt="IMAGEN1" class="card-item__img--front">
+                    <img src=".<%= producto.img_back %>" alt="imagen-troper-box" class="card-item__img--back">
+                  </picture>
+
+                  <div class="card-item__content">
+                    <p class="card-item__licence">
+                      <%= producto.licence_name %>
+                    </p>
+                    <h4 class="card-item__name">
+                      <%= producto.product_name %>
+                    </h4>
+                    <p class="card-item__price">$ <%= producto.product_price %>.-</p>
+                    <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+
+            <% }); %>
+        </ul>
+
+        <div class="pagination">
+          <a class="pagination__link" href="#">
+            < </a>
+              <a class="pagination__link pagination__link--selected" href="#">1</a>
+              <a class="pagination__link" href="#">2</a>
+              <a class="pagination__link" href="#">3</a>
+              <a class="pagination__link" href="#">4</a>
+              <a class="pagination__link" href="#">5</a>
+              <a class="pagination__link" href="#">></a>
+        </div>
+      </section>
+
+      <!-- FALTA SABER COMO SE HACE EL EMPAJINADO-->
+    </main>
+
+    <%-include("../partials/footer")%>
+
+</body>
+
+</html>

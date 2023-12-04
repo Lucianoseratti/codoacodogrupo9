@@ -5,8 +5,8 @@ const { adminView, viewAdminCreate, viewAdminEdit, adminCreate, adminEdit, admin
 router.get("/", adminView);
 router.get("/create", viewAdminCreate);
 router.get("/edit/:id", viewAdminEdit);
-router.post("/create", adminCreate);
-router.put("/edit/:id", adminEdit);
-router.delete("/delete/:id", adminDelete);
+router.post("/create", adminCreate); //mission 6
+router.put("/edit/:id", adminEdit);  //mission 6
+router.delete("/delete/:id", adminDelete); //mission 6
 
 module.exports = router;

@@ -42,6 +42,8 @@
     --font-small: 1.6em;
     --font-xsmall: 1.4em;
     --font-xxsmall: 1.2em;
+    --font-xxxsmall: 1.12em;
+    --font-xxxxsmall: 1em;
 
     /* Spacings */
     --spacing-180: 18rem;
