@@ -329,6 +329,16 @@ p {
     font-weight: 500;
     transition: background .3s ease-in-out;
 }
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.collection__link:hover {
+    background-color: var(--primary-900);
+}
 
 a {
     text-decoration: none;
