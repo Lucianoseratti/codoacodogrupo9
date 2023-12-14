@@ -16,58 +16,68 @@
 
     <main class="edit container">
         <h2 class="edit__title">EDITAR ITEM</h2>
-        <form class="edit__form con " action="/">
+        <form class="edit__form con " action="<%=producto.product_id%>" enctype="multipart/form-data" method="POST">
+            
             <ul>
                 <li class="form__item grid ">
                     <div class="item_select">
                         <label class="form__label">Categoría:</label>
-                        <select class="form__select" name="" id="">
-                            <option value="star-wars">Figuras</option>
-                            <option value="marvel">Marvel</option>
-                            <option value="dc">DC</option>
+                        <select class="form__select" name="category_name" id="">
+                            <% uniqueCategory.forEach(categoria => { %>
+                                <option value="<%= categoria %>"><%= categoria %></option>
+                            <% }); %>
                         </select>
                     </div>
                     <div class="item_select">
                         <label class="form__label">Licencia:</label>
-                        <select class="form__select" name="" id="">
-                            <option value="star-wars">Naruto Shippuden</option>
-                            <option value="marvel">Marvel</option>
-                            <option value="dc">DC</option>
+                        <select class="form__select" name="licence_name" id="" >
+                            <% uniqueLicences.forEach(licence => { %>
+                                <option value="<%= licence %>"><%= licence %></option>
+                            <% }); %>
                         </select>
                     </div>
                 </li>
                 <li class="form__item">
                     <label class="form__label">Nombre del Producto:</label>
-                    <input class="form__input" id="product_input" type="text" value="" placeholder="<%=producto.product_name%>">
+                    <input class="form__input" id="product_input" name="product_name" type="text" value="<%=producto.product_name%>" placeholder="<%=producto.product_name%>" >
                 </li>
                 <li>
 
-                    <textarea class="form__area" id="" cols="90"
-                        rows="8" placeholder="<%=producto.product_description%>"></textarea>
+                    <textarea class="form__area" id="" cols="90" rows="8" name="product_description" placeholder="<%=producto.product_description%>"> <%=producto.product_description%></textarea>
                 </li>
                 <li class="form__item">
                     <label class="form__label">SKU:</label>
-                    <input class="form__input" id="SKU_input" type="text" value="<%=producto.product_sku%>" placeholder="<%=producto.product_sku%>">
+                    <input class="form__input" id="SKU_input" type="text" name="product_sku" value="<%=producto.product_sku%>" placeholder="<%=producto.product_sku%>">
                     <label class="form__label">Precio:</label>
-                    <input class="form__input" id="precio_input" type="text" value="<%=producto.product_price%>" placeholder="<%=producto.product_price%>">
+                    <input class="form__input" id="precio_input" type="text" name="product_price" value="<%=producto.product_price%>" placeholder="<%=producto.product_price%>">
                     <label class="form__label">Stock:</label>
-                    <input class="form__input" id="stock_input" type="text" value="<%=producto.stock%>" placeholder="<%=producto.stock%>">
+                    <input class="form__input" id="stock_input" type="text" value="<%=producto.stock%>" name="stock" placeholder="<%=producto.stock%>">
                 </li>
                 <li class="form__item">
                     <label class="form__label">Descuento:</label>
-                    <input class="form__input" id="desc_input" type="text" value="<%=producto.dues%> %" placeholder="<%=producto.dues%> %">
-                    <label class="form__label">Cuotas:</label>
-                    <select class="form__select" name="" id="select_cuota" >
-                        <option value="1">1 Cuota</option>
-                        <option value="3">3 Cuotas sin Interés</option>
-                        <option value="6">6 Cuotas sin Interés</option>
-                        <option value="12">12 Cuotas sin Interés</option>
-                    </select>
+                    <input class="form__input" id="desc_input" type="text" value="<%=producto.dues%>" name="dues" placeholder="<%=producto.dues%> %">
+                    <label class="form__label">%  Cuotas:</label>
+                    <select class="form__select" name="cuota"  id="select_cuota"   value="<%= producto.cuota %>">
+                        <% const selectedCuota = producto.cuota; %>
+       
+        <!-- Agregamos una opción adicional para cuando no haya coincidencia -->
+       
+            <option value="<%= selectedCuota %>" selected enabled hidden><%=  producto.cuota %> Cuota sin interes</option>
+            <option value="1">1 Cuotasss</option>
+            <option value="3">3 Cuotas sin Interés</option>
+            <option value="6">6 Cuotas sin Interés</option>
+            <option value="12">12 Cuotas sin Interés</option>
+      
+    </select>
                 </li>
 
                 <li class="form__item">
                     <label class="form__label" for="">Imágenes: </label>
-                    <input class="item_arch" type="file" multiple name="" id="">
+                    <input class="item_arch" type="file"  name="imagenFront" id="" >
+                </li>
+                <li class="form__item">
+                    <label class="form__label" for="">Imágenes Trasera: </label>
+                    <input class="item_arch" type="file" name="imagenBack" id="">
                 </li>
                 <li class="form__img">
 
@@ -86,7 +96,7 @@
 
 
                 <li class="form__item">
-                    <button class="form__btn btn btn--primary btn--large" type="submit" onclick="modificarProducto()">
+                    <button class="form__btn btn btn--primary btn--large" type="submit">
                         Modificar Producto
                     </button>
                 </li>

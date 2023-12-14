@@ -121,10 +121,22 @@
 
 }
 
-.card-item__img--back {
-    display: none;
-
-}
+.card-item__img--front {
+   
+    max-width: 301px;
+    max-height: 301px;
+    object-fit: cover;
+    }
+    
+    
+    .card-item__img--back {
+        display: none;
+        max-width: 301px;
+    max-height: 301px;
+    object-fit: cover;
+    }
+    
+  
 
 .card-item__cover:hover .card-item__img--back {
     display: block;
